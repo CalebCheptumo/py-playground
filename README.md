@@ -12,9 +12,9 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
 
 ## 💪 Exercises
 
-- 🏷️ [Name Cases](./variables-data-types/exercises/name_cases.py) - Exercise on manipulating and formatting strings.
-- 🏋️‍♀️ [Numbers Exercise](./variables-data-types/exercises/numbers_exercise.py) - Exercise to test understanding of numbers in Python.
-- 📜 [Simple Message](./variables-data-types/exercises/simple_message.py) - Exercise on storing a message in a variable and printing it.
-- 📝 [Simple Messages](./variables-data-types/exercises/simple_messages.py) - Exercise on changing the value of a variable and printing it.
+- 🏷️ [Name Cases](./variables-data-types/name_cases.py) - Exercise on manipulating and formatting strings.
+- 🏋️‍♀️ [Numbers Exercise](./variables-data-types/numbers_exercise.py) - Exercise to test understanding of numbers in Python.
+- 📜 [Simple Message](./variables-data-types/simple_message.py) - Exercise on storing a message in a variable and printing it.
+- 📝 [Simple Messages](./variables-data-types/simple_messages.py) - Exercise on changing the value of a variable and printing it.
 
 Dive in and explore! 🏊‍♀️
