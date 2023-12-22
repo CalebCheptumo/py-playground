@@ -57,5 +57,61 @@ print(f"Hi {dinner_friends[0]} you are still invited to dinner")
 print(f"Hi {dinner_friends[1]} you are still invited to dinner")
 
 print(dinner_friends)
-del dinner_friends[-2] #deleting the last 2 items in the list
+del dinner_friends[-2:] #deleting the last 2 items in the list
 print(dinner_friends)
+
+
+dream_destination = ["Maldives" ,"San Francisco" ,"New York" ,"Paris" ,"London" ]
+print(dream_destination)
+sorted_destination = sorted(dream_destination)
+print(f"This is the sorted destination:\n {sorted_destination} \nwithout modifying the actual list : \n{dream_destination}")
+
+dream_destination = ["Maldives" ,"San Francisco" ,"New York" ,"Paris" ,"London" ]
+sorted_destination = sorted(dream_destination, reverse=True)
+print(f"This is sorted order alphabetically: {sorted_destination} and this is my original list: {dream_destination}")
+
+#change order of list
+dream_destination = ["Maldives" ,"San Francisco" ,"New York" ,"Paris" ,"London" ]
+dream_destination.reverse()
+print(dream_destination)
+
+#revert back to original order
+dream_destination = ["Maldives" ,"San Francisco" ,"New York" ,"Paris" ,"London" ]
+dream_destination.reverse()
+print(dream_destination)
+
+dream_destination = ["Maldives" ,"San Francisco" ,"New York" ,"Paris" ,"London" ]
+dream_destination.sort()
+print(dream_destination)
+
+dream_destination = ["Maldives" ,"San Francisco" ,"New York" ,"Paris" ,"London" ]
+dream_destination.sort(reverse = True)
+print(dream_destination)
+
+
+dinner_friends = ["Joseph", "Glenn", "Sally"]
+number_of_invites = len(dinner_friends)
+print(f"The number of friends invited for dinner is {number_of_invites}")
+
+counties = []
+counties.append("Nairobi")
+counties.append("Mombasa")
+counties.append("Kisumu")
+counties.append("Nakuru")
+counties.append("Kakamega")
+print(counties)
+length_of_counties =len(counties)
+print(length_of_counties)
+print(counties)
+counties.insert(0, "Kisii")
+print(counties)
+counties.pop()
+print(counties)
+counties.remove("Nakuru")
+print(counties)
+counties = ["Nairobi", "Mombasa", "Kisumu", "Nakuru", "Kakamega"]
+del counties[-5:]
+print(counties)
+counties = ["Nairobi", "Mombasa", "Kisumu", "Nakuru", "Kakamega"]
+counties.sort()
+print(counties)
