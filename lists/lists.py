@@ -96,3 +96,44 @@ todo = ["Do laundry", "Clean room", "Wash dishes"]
 done_todo = "Do laundry" #assigning the value to a variable
 todo.remove(done_todo)
 print(f"The {done_todo} task is completed")
+
+
+
+
+#Organizing a List
+#using sort() method to sort a list permanently
+
+cars = ["bmw", "audi", "toyota", "subaru"]
+cars.sort()
+print(cars)
+
+#sort() method sorts the list alphabetically in ascending order permanently.
+#sort() method is case sensitive in alphabetical order.
+
+#we can sort the list in reverse alphabetical order by passing the argument reverse=True to the sort() method.
+
+cars = ["bmw", "audi", "toyota", "subaru"]
+cars.sort(reverse=True)
+print(cars)
+
+
+#using sorted() function to sort a list temporarily without altering the original list
+cars = ["bmw", "audi", "toyota", "subaru"]
+print(f"Here is the original cars list:\n {cars}")
+sorted_cars = sorted(cars)
+print(f"\nHere is the sorted list: \n{sorted_cars}")
+print(f"\nHere is the original cars list again which is not affected {cars}")
+
+
+#using reverse() method to reverse the original order of a list.
+
+cars = ["bmw", "audi", "toyota", "subaru"]
+cars.reverse()
+print(f"Here is the reverse order : {cars}")
+
+
+#using len() function to find the length of a list
+#len() counts the numbers of items starting from 1
+cars = ["bmw", "audi", "toyota", "subaru"]
+cars_length = len(cars)
+print(f"Here is the length of the list :{cars_length}")
