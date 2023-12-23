@@ -19,6 +19,12 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - 📋 [Lists](./lists/lists.py) 
     - Learning how to work with lists in Python.
 
+- 🔄 Working with Lists
+  - 🔁 [Looping](./working-with-lists/looping.py)
+    - Learning how to use loops with lists.
+  - 🔢 [Numerical Lists](./working-with-lists/numerical_lists.py)
+    - Understanding how to generate and work with numerical lists.
+
 ## 💪 Exercises
 
 - 🏷️ [Name Cases](./variables-data-types/name_cases.py) 
@@ -31,5 +37,9 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - Exercise on changing the value of a variable and printing it.
 - 📋 [Lists Exercise](./lists/lists_exercise.py) 
   - Exercise to test understanding of lists in Python.
+- 🔁 [Loop Exercise](./working-with-lists/loop_exercise.py)
+  - Exercise to test understanding of loops in Python.
+- 🔢 [Numerical Lists Exercise](./working-with-lists/numerical_lists_exercise.py)
+  - Exercise to test understanding of numerical lists in Python.
 
 Dive in and explore! 🏊‍♀️
