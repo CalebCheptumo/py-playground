@@ -36,4 +36,26 @@ print(f"Original list: {towns}")
 print(f"Copy of the list : {towns_copy}")
 
 
+#negative indexing
+#syntax: list_name[-index] 
+#negative indexing starts from the end of the list
+#-1 is the last element, -2 is the second last element and so on
 
+towns = ['Nairobi', 'Mombasa', 'Kisumu', 'Nakuru', 'Eldoret', 'Thika', 'Kitale', 'Malindi', 'Garissa', 'Kakamega']
+print(towns[-1:]) #prints the last element
+print(towns[-2:]) #prints the second last element
+print(towns[-3:]) #prints the third last element
+
+#using is to check if two lists are the same
+cars = ['Toyota', 'Nissan', 'Subaru', 'Mitsubishi', 'Honda', 'Mazda', 'Suzuki', 'Isuzu', 'Volkswagen', 'Ford']
+favorite_cars = cars[:]
+print(cars is favorite_cars) #returns false because they are two different lists
+print(cars == favorite_cars) #returns true because they have the same values
+
+#slicing assignment
+#syntax: list_name[start:stop] = [new_values]
+#modify part of a list
+
+months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September']
+months[1:3] = ['New February', 'New March']
+print(months)

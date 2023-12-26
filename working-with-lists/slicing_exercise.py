@@ -7,6 +7,7 @@ print(f"The last three students are {students[7:10]}")
 #My pizza, your pizza
 pizzas = ["Chicken", "Pepperoni", "Hawaiian"]
 friend_pizzas = pizzas[:]
+
 pizzas.append("Ostrich")
 friend_pizzas.append("Beef")
 
