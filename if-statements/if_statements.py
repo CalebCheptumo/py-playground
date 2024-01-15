@@ -1,4 +1,5 @@
 # if statements - allows you to examine the current state of a program and respond appropriately to that state.
+# The if-else statement in Python is used for decision making. It runs a block of code if a specified condition is true. If the condition is false, another block of code can be executed. The else keyword catches anything which isn't caught by the preceding conditions
 
 cars = ['audi', 'bmw', 'subaru', 'toyota']
 for car in cars:
@@ -207,3 +208,13 @@ for requested_topping in requested_toppings:
     else:
         print(f"Sorry we dont have {requested_topping}")
 print("\nFinished making your pizza")
+
+
+# nested  is statement - if statement inside if statement
+x = 10
+if x > 5:
+    print("Above five")
+    if x >= 10:
+        print("and also above 10!")
+    else:
+        print("but not above 10")
