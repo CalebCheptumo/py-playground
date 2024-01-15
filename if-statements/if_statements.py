@@ -218,3 +218,8 @@ if x > 5:
         print("and also above 10!")
     else:
         print("but not above 10")
+
+# the pass statement - if statement can be empty , use pass  statement to avoid error if you have if statement with no content
+x = 10
+if x > 5:
+    pass
