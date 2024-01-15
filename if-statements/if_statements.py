@@ -163,3 +163,47 @@ if 'pepperoni' in requested_topping:
 if 'extra cheese' in requested_topping:
     print("Adding extra cheese")
 print("\nFinished making your pizza")
+
+
+# using if statement with lists
+# watch for special values that need to be treated diff
+# manage changing conditions eg availability of certain items
+# checking for special items
+
+requested_toppings = ['mushroom', 'green peppers', 'extra cheese']
+for requested_topping in requested_toppings:
+    print(f"Adding {requested_topping}")
+print("\nFinished making your pizza!")
+# that is just a straight forward for loop
+# if statement will handle if pizza runs out of toppins lets say green peppers
+
+requested_toppings = ['mushroom', 'green peppers', 'extra cheese']
+for requested_topping in requested_toppings:
+    if requested_topping == 'green peppers':  # checks if person requested green peppers is true
+        print("sorry , we are out of green peppers right now")
+    else:
+        print(f"Adding {requested_topping}")
+print("\nfinished making your pizza")
+
+
+# checking that a list is not empty
+requested_toppings = []
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print(f"adding {requested_topping}")
+    print("\nFinished making your pizza")
+else:
+    print("Are you sure you want a plain pizza?")
+
+
+# using multiple lists
+available_toppings = ['mushrooms', 'olives',
+                      'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print(f"Adding {requested_topping}")
+    else:
+        print(f"Sorry we dont have {requested_topping}")
+print("\nFinished making your pizza")
