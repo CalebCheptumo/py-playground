@@ -89,3 +89,77 @@ if user not in banned_users:
 # always used to keep track of certain conditions - whether game is running, whether a user can edit certain content on a website.
 game_active = True
 can_edit = False
+
+# Simple if statement
+# conditional_test = 'A'
+# if conditional_test:
+# do something
+
+age = 19
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+
+
+# if else statement -  when you want to take one action when a condition test passes and a differnet action in all other cases
+# else statement allows you to define an action or set of actions that are executed when the condition test fails
+age = 17
+if age >= 18:
+    print("You are old enough to vote")
+    print("Have you registered to vote yet?")
+else:
+    print("Sorry , you are too young to vote")
+    print("Please register to vote as soon you turn 18")
+
+# if condition passes first block is executed , else second block
+# only works when you want python to execute one of the two possible actions.
+
+# if-elif-else chain - test more than two possible situations
+# determine admission rate
+age = 12
+if age < 4:
+    print("Your admission cost is Ksh 0")
+elif age < 18:
+    print("Your admission cost is Ksh 250")
+else:
+    print("Your admission cost is Ksh 400")
+
+
+# using multiple elif block
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 250
+elif age < 65:
+    price = 400
+else:
+    price = 200  # people older than 65
+print(f"your admission cost is ksh {price}")
+
+
+# omitting the else block - python does not require an end of if-elif chain - its clear to use an additional elif statement
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 250
+elif age < 65:
+    price = 400
+elif age >= 65:  # assigns price when person is 65 or older
+    price = 200
+
+print(f"Your admission cost is ksh {price}")
+
+
+# testing multiple condition
+# if-elif-else chain is only appropriate to use when you just need one test to pass.- as soon python finds on test that passes it skips the rest test
+# use series of if statement with no elif or else to check all conditions of interest
+requested_topping = ['mushrooms', 'extra cheese']
+if 'mushrooms' in requested_topping:
+    print("Adding mushrooms")
+if 'pepperoni' in requested_topping:
+    print("Adding pepperoni")
+if 'extra cheese' in requested_topping:
+    print("Adding extra cheese")
+print("\nFinished making your pizza")
