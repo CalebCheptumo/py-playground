@@ -72,7 +72,7 @@ elif age >= 65:
     print("Elder")
 
 
-favorite_fruits = ['mango','apple','pineapple','watermellon']
+favorite_fruits = ['mango', 'apple', 'pineapple', 'watermellon']
 if 'mango' in favorite_fruits:
     print("i like mango")
 if 'orange' in favorite_fruits:
@@ -86,3 +86,56 @@ if 'avocado' in favorite_fruits:
 if 'watermellon' in favorite_fruits:
     print("i like watermellon")
 
+
+# Hello admin
+users = ['admin', 'ian', 'jane', 'mary', 'morine']
+for user in users:
+    if user == 'admin':
+        print(f"Hello {user} would you like to see a status report?")
+    else:
+        print(f"Hello {user} thank you for logging in again")
+
+
+# no user
+users = []
+if users:
+    for user in users:
+        print(f"Adding {user}")
+    print("Finished adding users ")
+else:
+    print("We need to find some users!")
+
+
+# checking username
+current_users = ['admin', 'ian', 'jane', 'mary', 'morine']
+current_users_lower = [user.lower() for user in current_users]
+
+new_users = ['doe', 'mary', 'martin', 'ariana', 'ann']
+for new_user in new_users:
+    if new_user.lower() in current_users_lower:
+        print("Enter new username")
+    else:
+        print("username is available")
+
+
+# ordinal numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for number in numbers:
+    if number == 1:
+        print("1st")
+    elif number == 2:
+        print("2nd")
+    elif number == 3:
+        print("3rd")
+    elif number == 4:
+        print("4th")
+    elif number == 5:
+        print("5th")
+    elif number == 6:
+        print("6th")
+    elif number == 7:
+        print("7th")
+    elif number == 8:
+        print("8th")
+    elif number == 9:
+        print("9th")
