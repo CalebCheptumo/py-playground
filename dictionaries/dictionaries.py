@@ -31,3 +31,20 @@ print(user.get('age'))  # Output: None
 # Adding New Key-Value Pairs
 # dictionaries are dynamic structures , you can add new key-value pairs to a dictionary at any time.
 # syntax: dictionary_name['new_key'] = 'new_value'
+alien_0 = {'color': 'blue', 'points': 5}
+print(alien_0)  # Output: {'color': 'blue', 'points': 5}
+alien_0['x_position'] = 0
+alien_0['y_position'] = 25
+# Output: {'color': 'blue', 'points': 5, 'x_position': 0, 'y_position': 25}
+print(alien_0)
+
+# dictionaries retain their original order. When you print a dictionary or loop through its elements, you will see the elements in the same order in which they were added to the dictionary.
+# Starting with an empty dictionary
+
+person = {}
+person['name'] = 'caleb'
+person['age'] = 25
+person['city'] = 'Nakuru'
+print(person)  # Output: {'name': 'caleb', 'age': 25, 'city': 'Nakuru'}
+
+# dictionary keys must be immutable - you can use integer,floats, strings, numbers, or tuples as dictionary keys but something like a list can't be used as a dictionary key.
