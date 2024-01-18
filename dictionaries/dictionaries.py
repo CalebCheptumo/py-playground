@@ -95,3 +95,9 @@ favorite_languages = {
 }
 # Output: {'jen': 'python', 'sarah': 'c', 'edward': 'ruby', 'phil': 'python'}
 
+# looping through a dictionary
+# syntax: for key, value in dictionary_name.items():
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
+
+for key, value in my_dict.items():
+    print(f"{key} : {value}")
