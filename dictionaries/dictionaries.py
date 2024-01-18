@@ -48,3 +48,12 @@ person['city'] = 'Nakuru'
 print(person)  # Output: {'name': 'caleb', 'age': 25, 'city': 'Nakuru'}
 
 # dictionary keys must be immutable - you can use integer,floats, strings, numbers, or tuples as dictionary keys but something like a list can't be used as a dictionary key.
+
+# Modifying Values in a Dictionary
+# assigning new value to a existing key
+# syntax: dictionary_name['key'] = 'new_value'
+
+person = {'name': 'caleb', 'age': 25, 'city': 'Nakuru'}
+print(person)  # Output: {'name': 'caleb', 'age': 25, 'city': 'Nakuru'}
+person['age'] = 26
+print(person)  # Output: {'name': 'caleb', 'age': 26, 'city': 'Nakuru'}
