@@ -21,4 +21,10 @@ full_name = f"{user['first']} {user['last']}"
 print(f"Hello, {full_name.title()}!")  # Output: Hello, Caleb Cheptumo!
 # once the user dictionary has been defined, we can pull the values associated with the keys 'username', 'first', and 'last'from the dictionary. Then this value is assigned to variable full_name.
 
+# Access a key that doesn't exist, you'll get an error.( KeyError)
+# Use get method which returns None instead of KeyError.
+
+print(user.get('age'))  # Output: None
+
+
 # Adding New Key-Value Pairs
