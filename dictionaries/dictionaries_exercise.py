@@ -31,3 +31,8 @@ print(f"Jane's favorite number is {jane}")
 print(f"James's favorite number is {james}")
 print(f"Josh's favorite number is {josh}")
 print(f"Jacob's favorite number is {jacob}")
+
+
+# using loop
+for name, number in favorite_numbers.items(): # items() method returns a list of key-value pairs and to iterate through the returned list, we use for loop.
+    print(f"{name.title()} 's favorite number is {number}")
