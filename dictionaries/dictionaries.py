@@ -161,3 +161,12 @@ cars = {
 }
 for manufacturer in cars.values():
     print(manufacturer.title())
+
+# using set() function to remove duplicates
+# syntax: for value in set(dictionary_name.values()):
+# set() function returns a list of unique items.
+# similar to list or tuple except that each item in the set must be unique.
+# sets are also unordered meaning that they dont have index positions.
+
+cars = {'Mustang': 'Ford', 'Civic': 'Honda', 'Camry': 'Toyota'}
+print(cars)
