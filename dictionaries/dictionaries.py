@@ -101,3 +101,31 @@ my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
 
 for key, value in my_dict.items():
     print(f"{key} : {value}")
+
+# using keys() method to loop through all the keys in dictionary
+# syntax: for key in dictionary_name.keys():
+# useful when you don't need to work with all of the values in a dictionary.
+# using keys() method to loop through all the keys in dictionary
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python'
+}
+for name in favorite_languages.keys():
+    print(name.title())
+
+
+cars = {
+    'Mustang': 'Ford',
+    'Civic': 'Honda',
+    'Camry': 'Toyota'
+}
+
+for model in cars.keys():
+    print(model.title())
+
+for model in cars.keys():  # 'model' will be 'Mustang', then 'Civic', then 'Camry'
+    # 'cars[model]' gets the value associated with the current key
+    print(f"The {model} is made by {cars[model]}")
