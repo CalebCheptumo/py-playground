@@ -176,3 +176,14 @@ print(cars)
 car_list = ['Ford', 'Civic', 'Camry']
 car_set = set(car_list)
 print(car_set)
+
+
+# Nesting - storing a set of dictionaries in a list or a list of items as a value in a dictionary.
+# A list of dictionaries
+# syntax: list_name = [{dictionary_1}, {dictionary_2}, {dictionary_3}]
+alien_0 = {'color': 'blue', 'points': 5}
+alien_1 = {'color': 'green', 'points': 10}
+alien_2 = {'color': 'yellow', 'points': 15}
+aliens = [alien_0, alien_1, alien_2]    # list of dictionaries
+for alien in aliens:
+    print(alien)
