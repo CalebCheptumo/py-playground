@@ -82,3 +82,15 @@ user = {'username': 'caleb', 'first': 'caleb', 'last': 'cheptumo'}
 print(user)
 del user['username']
 print(user)  # Output: {'first': 'caleb', 'last': 'cheptumo'}
+
+
+# A Dictionary of Similar Objects
+# Dictionary is useful the results of a simple poll, where each response is stored as a value associated with a particular person.
+# syntax: dictionary_name = {'key': 'value', 'key': 'value'}
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python'
+}
+# Output: {'jen': 'python', 'sarah': 'c', 'edward': 'ruby', 'phil': 'python'}
