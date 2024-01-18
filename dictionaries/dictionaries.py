@@ -73,3 +73,12 @@ else:
 # The new position is the old position plus the increment.
 alien_0['x_position'] = alien_0['x_position'] + x_increment
 print(f"New position: {alien_0['x_position']}")
+
+# Removing Key-Value Pairs -  using del keyword statement
+# syntax: del dictionary_name['key']
+# del keyword removes the key-value pair permanently.
+user = {'username': 'caleb', 'first': 'caleb', 'last': 'cheptumo'}
+# Output: {'username': 'caleb', 'first': 'caleb', 'last': 'cheptumo'}
+print(user)
+del user['username']
+print(user)  # Output: {'first': 'caleb', 'last': 'cheptumo'}
