@@ -146,3 +146,18 @@ for name in sorted(favorite_languages.keys()):
     print(f"{name.title()}, thank you for taking the poll.")
     print(
         f"{name.title()} favorite language is {favorite_languages[name].title()}.")
+
+
+# looping through all values in a dictionary - values() method
+# syntax: for value in dictionary_name.values():
+# returns a list of values without any keys.
+# it doesn't provide a way to get the corresponding key for any value.
+# it doesn't check for duplicates.
+
+cars = {
+    'Mustang': 'Ford',
+    'Civic': 'Honda',
+    'Camry': 'Toyota'
+}
+for manufacturer in cars.values():
+    print(manufacturer.title())
