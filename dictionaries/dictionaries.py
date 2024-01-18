@@ -129,3 +129,20 @@ for model in cars.keys():
 for model in cars.keys():  # 'model' will be 'Mustang', then 'Civic', then 'Camry'
     # 'cars[model]' gets the value associated with the current key
     print(f"The {model} is made by {cars[model]}")
+
+
+# looping in a particular order
+# use sorted() function to get a copy of the keys in order.
+# syntax: for key in sorted(dictionary_name.keys()):
+# sorted() sorts the keys temporarily, in alphabetical order.
+# The original order of the keys remains intact in the dictionary.
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python'
+}
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+    print(
+        f"{name.title()} favorite language is {favorite_languages[name].title()}.")
