@@ -74,3 +74,19 @@ for river in rivers.keys():
 print("\nCountries:")
 for country in rivers.values():
     print(country.title())
+
+
+# Polling
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+
+pollsters = ['jen', 'sarah', 'edward', 'phil', 'james', 'jacob', 'josh']
+for pollster in pollsters:
+    if pollster in favorite_languages.keys():
+        print(f"{pollster.title()}, thank you for taking the poll.")
+    else:
+        print(f"{pollster.title()}, please take the poll.")
