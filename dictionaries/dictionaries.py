@@ -168,5 +168,11 @@ for manufacturer in cars.values():
 # similar to list or tuple except that each item in the set must be unique.
 # sets are also unordered meaning that they dont have index positions.
 
-cars = {'Mustang': 'Ford', 'Civic': 'Honda', 'Camry': 'Toyota'}
+cars = {'Mustang', 'Civic', 'Camry'}
 print(cars)
+
+# creating a set from a list
+# syntax: set(list_name)
+car_list = ['Ford', 'Civic', 'Camry']
+car_set = set(car_list)
+print(car_set)
