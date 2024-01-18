@@ -56,3 +56,21 @@ glossary = {
 
 for word, definition in glossary.items():
     print(f"\n{word.title()}: {definition}")
+
+
+# Rivers
+rivers = {
+    'turkana': 'kenya',
+    'ewaso': 'kenya',
+    'tana': 'kenya',
+}
+for river in rivers.keys():
+    print(f"The {river.title()} river runs through {rivers[river].title()}")
+
+print("\nRivers:")
+for river in rivers.keys():
+    print(river.title())
+
+print("\nCountries:")
+for country in rivers.values():
+    print(country.title())
