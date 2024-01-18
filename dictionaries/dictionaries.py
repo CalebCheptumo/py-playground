@@ -11,6 +11,7 @@
 # A dictionary can be wrapped in braces {}, with a series of key-value pairs inside the braces, or it can be empty {}.
 # A simple dictionary
 # the dictionary alien_o stores the alien's color and points.
+# syntax: dictionary_name = {'key': 'value', 'key': 'value'}
 alien_0 = {'color': 'blue', 'points': 5}
 print(alien_0['color'])  # Output: blue
 print(alien_0['points'])  # Output: 5
@@ -28,3 +29,5 @@ print(user.get('age'))  # Output: None
 
 
 # Adding New Key-Value Pairs
+# dictionaries are dynamic structures , you can add new key-value pairs to a dictionary at any time.
+# syntax: dictionary_name['new_key'] = 'new_value'
