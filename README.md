@@ -25,6 +25,10 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - 🔢 [Numerical Lists](./working-with-lists/numerical_lists.py)
     - Understanding how to generate and work with numerical lists.
 
+- 🎛️ If-Statements
+  - 📜 [If-Statements](./if-statements/if_statements.py)
+    - Understanding how to use if-statements in Python.
+
 ## 💪 Exercises
 
 - 🏷️ [Name Cases](./variables-data-types/name_cases.py) 
@@ -41,5 +45,8 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - Exercise to test understanding of loops in Python.
 - 🔢 [Numerical Lists Exercise](./working-with-lists/numerical_lists_exercise.py)
   - Exercise to test understanding of numerical lists in Python.
+- 🎛️ [If-Statements Exercise](./if-statements/if_statements_exercise.py)
+  - Exercise to test understanding of if-statements in Python.
+
 
 Dive in and explore! 🏊‍♀️
