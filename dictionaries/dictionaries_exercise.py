@@ -163,3 +163,18 @@ for name, places in favorite_places.items():
     print(f"{name.title()}'s favorite places are:")
     for place in places:
         print(f"\t{place.title()}")
+
+
+# Favorite numbers
+favorite_numbers = {
+    'caleb': [9, 7, 3],
+    'jane': [7, 3, 5],
+    'james': [3, 5, 2],
+    'josh': [5, 2, 9],
+    'jacob': [2, 9, 7],
+}
+
+for name, numbers in favorite_numbers.items():
+    print(f"{name.title()}'s favorite numbers are:")
+    for number in numbers:
+        print(f"\t{number}")
