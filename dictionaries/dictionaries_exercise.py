@@ -125,3 +125,28 @@ for person in people:  # loop through the list
     print(f"Full Name : {full_name.title()}")
     print(f"Age: {age}")
     print(f"City: {city.title()}")
+
+# Pets
+
+pet_1 = {
+    'animal_type': 'dog',
+    'owner': 'james',
+}
+
+pet_2 = {
+    'animal_type': 'cat',
+    'owner': 'jane',
+}
+
+pet_3 = {
+    'animal_type': 'rabbit',
+    'owner': 'josh',
+}
+
+pets = [pet_1, pet_2, pet_3]
+
+for pet in pets:
+    animal = pet['animal_type']
+    owner = pet['owner']
+
+    print(f"{owner.title()} owns a {animal}.")
