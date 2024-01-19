@@ -187,3 +187,18 @@ alien_2 = {'color': 'yellow', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]    # list of dictionaries
 for alien in aliens:
     print(alien)
+
+
+# empty list to store aliens
+aliens = []  # empty list
+# make 30 green aliens
+# range() function returns a series of numbers starting at 0 and ending at 29.
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    # append() method adds each new alien to the list aliens.
+    aliens.append(new_alien)
+# show the first 5 aliens
+for alien in aliens[:5]:  # slice the first 5 aliens
+    print(alien)
+# show how many aliens have been created.
+print(f"Total number of aliens: {len(aliens)}")
