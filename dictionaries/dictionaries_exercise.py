@@ -91,3 +91,37 @@ for pollster in pollsters:
     else:
         print(f"{pollster.title()}, please take the poll.")
 
+
+# People
+# dictionary  person_1 that stores information about a person .
+person_1 = {
+    'first_name': 'John',
+    'last_name': 'Doe',
+    'age': 30,
+    'city': 'Maldives'
+}
+person_2 = {
+    'first_name': 'Jane',
+    'last_name': 'Doe',
+    'age': 25,
+    'city': 'Maldives'
+}
+
+person_3 = {
+    'first_name': 'James',
+    'last_name': 'Doe',
+    'age': 20,
+    'city': 'Maldives'
+}
+
+# list people that contains dictionaries
+people = [person_1, person_2, person_3]
+
+for person in people:  # loop through the list
+    full_name = f"{person['first_name']} {person['last_name']}"
+    age = person['age']
+    city = person["city"]
+
+    print(f"Full Name : {full_name.title()}")
+    print(f"Age: {age}")
+    print(f"City: {city.title()}")
