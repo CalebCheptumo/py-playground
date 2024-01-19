@@ -150,3 +150,16 @@ for pet in pets:
     owner = pet['owner']
 
     print(f"{owner.title()} owns a {animal}.")
+
+
+# Favorite places
+    favorite_places = {
+        'annette': ['nairobi', 'mombasa', 'kisumu'],
+        'james': ['malindi', 'lamu', 'watamu'],
+        'jane': ['kakamega', 'eldoret', 'nakuru'],
+    }
+
+for name, places in favorite_places.items():
+    print(f"{name.title()}'s favorite places are:")
+    for place in places:
+        print(f"\t{place.title()}")
