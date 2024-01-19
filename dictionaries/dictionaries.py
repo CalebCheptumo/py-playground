@@ -254,4 +254,29 @@ print(employees['caleb'])  # Output: ['Python', 'Java', 'C++']
 
 employees['caleb'].append('C#')
 
-print(employees['caleb']) # Output: ['Python', 'Java', 'C++', 'C#']
+print(employees['caleb'])  # Output: ['Python', 'Java', 'C++', 'C#']
+
+
+# A Dictionary in a Dictionary
+# syntax: dictionary_name = {'key': {'key': 'value'}}
+
+users = {
+    'caleb': {
+        'first': 'caleb',
+        'last': 'cheptumo',
+        'location': 'Nakuru'
+    },
+    'mary': {
+        'first': 'mary',
+        'last': 'jane',
+        'location': 'Nairobi'
+    }
+}
+
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    full_name = f"{user_info['first']} {user_info['last']}"
+    location = user_info['location']
+
+    print(f"\nFull Name : {full_name.title()}")
+    print(f"Location : {location.title()}")
