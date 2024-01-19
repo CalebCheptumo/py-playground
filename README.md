@@ -29,6 +29,10 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - 📜 [If-Statements](./if-statements/if_statements.py)
     - Understanding how to use if-statements in Python.
 
+- 📖 Dictionaries
+  - 📚 [Dictionaries](./dictionaries/dictionaries.py)
+    - Learning how to work with dictionaries in Python.
+
 ## 💪 Exercises
 
 - 🏷️ [Name Cases](./variables-data-types/name_cases.py) 
@@ -47,6 +51,8 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - Exercise to test understanding of numerical lists in Python.
 - 🎛️ [If-Statements Exercise](./if-statements/if_statements_exercise.py)
   - Exercise to test understanding of if-statements in Python.
+- 📚 [Dictionaries Exercise](./dictionaries/dictionaries_exercise.py)
+  - Exercise to test understanding of dictionaries in Python.
 
 
 Dive in and explore! 🏊‍♀️
