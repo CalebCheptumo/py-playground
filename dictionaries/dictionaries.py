@@ -280,3 +280,27 @@ for username, user_info in users.items():
 
     print(f"\nFull Name : {full_name.title()}")
     print(f"Location : {location.title()}")
+
+
+# another example
+employees = {
+    'caleb': {
+        'position': 'Web Developer',
+        'salary': 100000,
+    },
+    'mary': {
+        'position': 'Data Scientist',
+        'salary': 120000,
+    },
+    'jane': {
+        'position': 'Software Engineer',
+        'salary': 150000,
+    }
+}
+
+print(employees['caleb']['position'])  # Output: Web Developer
+print(employees['jane']['salary'])  # Output: 150000
+
+employees['jane']['salary'] = 200000
+
+print(employees['jane']['salary'])  # Output: 200000
