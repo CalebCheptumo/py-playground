@@ -178,3 +178,32 @@ for name, numbers in favorite_numbers.items():
     print(f"{name.title()}'s favorite numbers are:")
     for number in numbers:
         print(f"\t{number}")
+
+
+# Cities
+cities = {
+    'nairobi': {
+        'country': 'kenya',
+        'population': 4_000_000,
+        'fact': 'The only city with a national park.',
+    },
+    'mombasa': {
+        'country': 'kenya',
+        'population': 1_000_000,
+        'fact': 'The only city with a port.',
+    },
+    'kisumu': {
+        'country': 'kenya',
+        'population': 1_000_000,
+        'fact': 'The only city with a lake.',
+    },
+}
+
+for city, city_info in cities.items():
+    country = city_info['country']
+    population = city_info['population']
+    fact = city_info['fact']
+
+    print(f"\n{city.title()} is in {country.title()}.")
+    print(f"Population: {population}")
+    print(f"Fact: {fact}")
