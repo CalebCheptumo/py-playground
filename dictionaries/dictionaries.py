@@ -226,3 +226,32 @@ for alien in aliens[0:3]:
 # show the first 5 aliens
 for alien in aliens[:5]:
     print(alien)
+
+
+# A list in a dictionary
+# syntax: dictionary_name = {'key': [list_items]}
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra cheese']
+}
+
+print(
+    f" you ordered a {pizza['crust']} - crust pizza with the following toppings:")
+
+for topping in pizza['toppings']:
+    print(f"{topping}")
+
+
+# Another example
+employees = {
+    'caleb': ['Python', 'Java', 'C++'],
+    'mary': ['C#', 'Java', 'Python'],
+    'jane': ['C++', 'Python', 'C#']
+}
+
+# prints all the languages that caleb knows
+print(employees['caleb'])  # Output: ['Python', 'Java', 'C++']
+
+employees['caleb'].append('C#')
+
+print(employees['caleb']) # Output: ['Python', 'Java', 'C++', 'C#']
