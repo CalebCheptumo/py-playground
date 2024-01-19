@@ -207,3 +207,47 @@ for city, city_info in cities.items():
     print(f"\n{city.title()} is in {country.title()}.")
     print(f"Population: {population}")
     print(f"Fact: {fact}")
+
+
+
+# Extensions
+
+# Cities
+cities = {
+    'nairobi': {
+        'country': 'kenya',
+        'population': 4_000_000,
+        'fact': 'The only city with a national park.',
+        'area': '696 km²',
+        'landmark': 'Nairobi National Park',
+    },
+    'mombasa': {
+        'country': 'kenya',
+        'population': 1_000_000,
+        'fact': 'The only city with a port.',
+        'area': '294.7 km²',
+        'landmark': 'Fort Jesus',
+    },
+    'kisumu': {
+        'country': 'kenya',
+        'population': 1_000_000,
+        'fact': 'The only city with a lake.',
+        'area': '208 km²',
+        'landmark': 'Kisumu Impala Sanctuary',
+    },
+}
+
+for city, city_info in cities.items():
+    country = city_info['country']
+    population = city_info['population']
+    fact = city_info['fact']
+    area = city_info['area']
+    landmark = city_info['landmark']
+
+    print(f"\n{city.title()} is in {country.title()}.")
+    print(f"Population: {population}")
+    print(f"Area: {area}")
+    print(f"Famous Landmark: {landmark}")
+    print(f"Fact: {fact}")
+
+
