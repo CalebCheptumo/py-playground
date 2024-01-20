@@ -23,3 +23,24 @@ prompt += "\nWhat is your first name? "
 
 name = input(prompt)
 print(f"Hello, {name}!")
+
+
+# using int() to accept numerical input
+# input() function interprets everything as a string
+
+age = input("How old are you .? ")
+print(f"Your age is {age}")
+age = int(age)  # convert string to integer
+print(age >= 18)
+
+
+# use int() to convert the string returned from input() to an integer
+# syntax: variable = int(input("prompt"))
+
+weight = input("How many pounds do you weigh? ")
+weight = int(weight)
+
+if weight >= 100:
+    print("Please unfat")
+else:
+    print("Please eat more")
