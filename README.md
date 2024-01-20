@@ -32,6 +32,11 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
 - 📖 Dictionaries
   - 📚 [Dictionaries](./dictionaries/dictionaries.py)
     - Learning how to work with dictionaries in Python.
+- 🔄 User Input and While Loops
+  - ⌨️ [User Input](./user-input-and-while-loops/input.py)
+    - Learning how to get user input in Python.
+  - 🔁 [While Loops](./user-input-and-while-loops/while_loops.py)
+    - Understanding how to use while loops in Python.
 
 ## 💪 Exercises
 
@@ -53,6 +58,8 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - Exercise to test understanding of if-statements in Python.
 - 📚 [Dictionaries Exercise](./dictionaries/dictionaries_exercise.py)
   - Exercise to test understanding of dictionaries in Python.
+- ⌨️ [User Input Exercise](./user-input-and-while-loops/input_exercise.py)
+  - Exercise to test understanding of user input in Python.
 
 
 Dive in and explore! 🏊‍♀️
