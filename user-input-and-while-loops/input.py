@@ -45,6 +45,8 @@ if weight >= 100:
 else:
     print("Please eat more")
 
+weight = float(input("How much do you weigh? "))
+print(weight)
 
 # Modulo operator (%) - divides one number by another number and returns the remainder
 # modulo operator doesn't tell you how many times one number fits into another
