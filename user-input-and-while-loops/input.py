@@ -44,3 +44,19 @@ if weight >= 100:
     print("Please unfat")
 else:
     print("Please eat more")
+
+
+# Modulo operator (%) - divides one number by another number and returns the remainder
+# modulo operator doesn't tell you how many times one number fits into another
+print(4 % 3)
+print(5 % 3)
+print(6 % 3)
+print(7 % 3)
+
+number = input("Enter a number, and ill tell you if it even or odd: ")
+number = int(number)
+
+if number % 2 == 0:
+    print(f"The number {number} is even")
+else:
+    print(f"The number {number} is odd")
