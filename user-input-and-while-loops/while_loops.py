@@ -47,4 +47,14 @@ while message != 'quit':
 #flag is a boolean variable that signals when some conditions has been meet.
 # if flag is True the loop continues
 # if it becomes False the loop stops
-#
+        
+
+#example
+active = True #initializing the flag to True
+while active: 
+    print("Inside while loop")
+
+    user_input = input("Do you want to continue: ")
+    if user_input == 'no':
+        active = False
+        print("Loop has ended")
