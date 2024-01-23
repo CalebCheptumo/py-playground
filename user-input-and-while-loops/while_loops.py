@@ -14,4 +14,15 @@ while i < 6:
 current_number = 1 # start at 1
 while current_number <= 5: # while loops as long as i is less than or equal to 5
     print(current_number)
-    current_number +- 1
+    current_number += 1
+
+
+#define a quit value
+
+prompt = "\n Tell me something ,and i will repeat it back to you:"
+prompt += "\nEnter 'quit' to end the program. "
+
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    print(message)
