@@ -39,3 +39,12 @@ while message != 'quit':
 
     if message != 'quit':
         print(message)
+
+
+
+#using a flag
+# used to control how long the program runs
+#flag is a boolean variable that signals when some conditions has been meet.
+# if flag is True the loop continues
+# if it becomes False the loop stops
+#
