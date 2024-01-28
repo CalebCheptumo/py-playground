@@ -47,3 +47,11 @@ while active:
         print("Your ticket is $10")
     else:
         print("Your ticket is $15")
+
+
+
+#infinity loop
+
+number = 0
+while number < 5:
+    print(number)
