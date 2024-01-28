@@ -58,3 +58,23 @@ while active:
     if user_input == 'no':
         active = False
         print("Loop has ended")
+
+
+
+#using break to exit a loop
+#break statement directs the flow of your program , you can use it to control which lines of code are executed and which aren't
+#break statement immediately exits the loop it is in
+        
+prompt = "\nPlease enter the name of a city you have visited:"
+prompt += "\n(Enter 'quit' when you are finished.) "
+
+while True: # will run forever unless it reaches a break statement
+    city = input(prompt)
+
+    if city == 'quit':
+        break
+    else:
+        print(f"i'd love to go to {city.title()}!")
+
+
+# you can use break statement in any of python's loops
