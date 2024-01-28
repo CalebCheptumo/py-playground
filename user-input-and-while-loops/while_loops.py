@@ -83,7 +83,8 @@ while True: # will run forever unless it reaches a break statement
 #using continue in a loop
 #continue statement tells python to ignore the rest of the loop and return to the beginning
 #continue statement returns to the beginning of the loop based on the result of a conditional test
-    
+#continue statement is used to skip the rest of the code inside the enclosing loop for the current iteration and move on to the next iteration of the loop.
+        
 current_number = 0
 while current_number < 10:
     current_number += 1 # increment current_number by 1
