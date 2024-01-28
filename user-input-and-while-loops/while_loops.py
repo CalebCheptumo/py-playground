@@ -92,3 +92,14 @@ while current_number < 10:
         continue  # continue to the beginning of the loop
 
     print(current_number)
+
+
+#avoiding infinite loops
+#Avoiding infinite loops in a while loop involves ensuring that the condition for the while loop will eventually become false. 
+
+x = 1
+while x <= 5:
+    print(x)
+    x += 1 # increment x by 1
+
+#if you omit the line x += 1 , the loop will run forever because the conditional test x <= 5 will never evaluate to False
