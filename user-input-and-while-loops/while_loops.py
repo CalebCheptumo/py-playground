@@ -154,3 +154,15 @@ while None in responses.values():
             responses[user] = new_response
             break
     
+
+
+
+#removing all instances of specific values from a list
+
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat'] # list of pets
+print(pets)
+
+while 'cat' in pets: # while 'cat' is in pets
+    pets.remove('cat') # remove 'cat' from pets
+
+print(pets)
