@@ -103,3 +103,33 @@ while x <= 5:
     x += 1 # increment x by 1
 
 #if you omit the line x += 1 , the loop will run forever because the conditional test x <= 5 will never evaluate to False
+    
+
+
+#while loop with lists and dictionaries
+#you can use while loops to modify or move items between lists, or to iterate over dictionaries in combination with other functions
+
+#moving items from one list to another
+#consider a list of newly registered but unverified users of a website.
+    
+#start with users that need to be verified,
+#and an empty list to hold confirmed users.
+    
+unconfirmed_users = ['jamo', 'phil' ,'mercy'] # list of unconfirmed users
+confirmed_users = [] # empty list to hold confirmed users
+
+#verify each user until there are no more unconfirmed users.
+#move each verified user into the list of confirmed users.
+
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop() # remove the last item in the list and store it in current_user
+    print(f"Verifying user: {current_user.title()}")
+    confirmed_users.append(current_user) # add current_user to the end of the list
+
+
+#display all confirmed users
+print("\nThe following users have been confirmed:")
+for confirmed_user in confirmed_users:
+    print(confirmed_user.title())
+
+# since mercy  is the last item in the list , she will be the first user to be verified
