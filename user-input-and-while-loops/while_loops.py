@@ -133,3 +133,24 @@ for confirmed_user in confirmed_users:
     print(confirmed_user.title())
 
 # since mercy  is the last item in the list , she will be the first user to be verified
+    
+
+
+#While loop with dictionaries
+# Start with a dictionary of unprocessed responses
+responses = {
+    'alice': 'blue',
+    'brian': None,
+    'candace': 'green',
+}
+
+# While there are still unprocessed responses
+while None in responses.values():
+    # Find the first unprocessed user
+    for user, response in responses.items():
+        if response is None:
+            print(f"{user}, please submit your response.")
+            new_response = input("Enter your response: ")
+            responses[user] = new_response
+            break
+    
