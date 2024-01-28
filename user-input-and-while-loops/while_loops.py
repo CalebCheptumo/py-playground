@@ -78,3 +78,16 @@ while True: # will run forever unless it reaches a break statement
 
 
 # you can use break statement in any of python's loops
+        
+
+#using continue in a loop
+#continue statement tells python to ignore the rest of the loop and return to the beginning
+#continue statement returns to the beginning of the loop based on the result of a conditional test
+    
+current_number = 0
+while current_number < 10:
+    current_number += 1 # increment current_number by 1
+    if current_number % 2 == 0: # if modulo of current_number is 0
+        continue  # continue to the beginning of the loop
+
+    print(current_number)
