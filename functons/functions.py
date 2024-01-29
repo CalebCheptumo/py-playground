@@ -36,6 +36,14 @@ greet_user()
 
 def greet_user(username): #username is a parameter, allows the function to accept any value of username you specify
     """Display a simple greeting."""
-    print(f"Hello, {username.title()}")
+    print(f"Hello, {username.title()} good morning!")
 
 greet_user('jesse') # passing jesse as an argument to the function greet_user()
+
+
+
+#arguments and parameters
+#parameter is a piece of information the function needs to do its job
+#argument is a piece of information that is passed from a function call to a function
+#username in the definition of greet_user() is an example of a parameter, a piece of information the function needs to do its job
+#jesse in greet_user('jesse') is an example of an argument, a piece of information that is passed from a function call to a function
