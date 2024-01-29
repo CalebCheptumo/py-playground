@@ -31,4 +31,11 @@ greet_user()
 #function body is a block of statements that perform a specific task, where the function's functionality is expressed
 #return statement sends a result back to the code that called the function, used to exit a function and go back to the line of code that called it  
 
+#passing information to a function
+#information that is passed to a function is called an argument
 
+def greet_user(username): #username is a parameter, allows the function to accept any value of username you specify
+    """Display a simple greeting."""
+    print(f"Hello, {username.title()}")
+
+greet_user('jesse') # passing jesse as an argument to the function greet_user()
