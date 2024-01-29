@@ -32,3 +32,16 @@ def make_shirt(size='large', message='I love Python'):
     print(f"The size of the shirt is {size} and the message printed on it is {message}")
 
 make_shirt()
+
+
+
+#cities
+
+def describe_city(city, country='Kenya'):
+    """Display a message about a city and the country it is in"""
+    print(f"{city.title()} is in {country.title()}")
+
+
+describe_city('nairobi')
+describe_city('mombasa')
+describe_city('kampala', 'uganda')
