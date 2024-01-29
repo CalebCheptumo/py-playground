@@ -113,3 +113,27 @@ describe_pet('simba') #positional argument , but first parameter needs to be pet
 describe_pet(pet_name='mimi', animal_type='cat') #describe another animal other than dog(default value) , ignore the default value
 
 #when you use default values, any parameter with a default value needs to be listed after all the parameters that don't have default values. This allows Python to continue interpreting positional arguments correctly.
+
+
+#equivalent function calls
+#positional arguments, keyword arguments, and default values can all be used together
+
+def describe_pet(pet_name, animal_type ='dog'): #default value for animal_type is 'dog' , argument for pet_name needs to be provided.
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+
+     
+
+#a dog named simba
+describe_pet('simba') #positional argument 
+describe_pet(pet_name='simba') #keyword argument
+
+
+#a fish named nemo
+describe_pet('nemo', 'fish') #positional arguments
+describe_pet(pet_name='nemo', animal_type='fish') #keyword arguments
+describe_pet(animal_type='fish', pet_name='nemo') #keyword arguments
+
+
