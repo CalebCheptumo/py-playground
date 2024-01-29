@@ -58,9 +58,9 @@ greet_user('jesse') # passing jesse as an argument to the function greet_user()
 #These are arguments that need to be passed in the same order as the parameters in the function definition.
 #The first argument gets assigned to the first parameter, the second argument gets assigned to the second parameter, and so forth.
 
-def describe_pet(animal_type, pet_name):
+def describe_pet(animal_type, pet_name): #animal_type and pet_name are parameters
     """Display information about a pet."""
     print(f"\nI have a {animal_type}.")
     print(f"My {animal_type}'s name is {pet_name.title()}.")
 
-describe_pet('dog', 'simba') #dog is assigned to animal_type and simba is assigned to pet_name
+describe_pet('dog', 'simba') #dog is assigned to animal_type and simba is assigned to pet_name , these are arguments
