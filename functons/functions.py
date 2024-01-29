@@ -77,3 +77,6 @@ def describe_pet(animal_type, pet_name):
 describe_pet('dog', 'simba')
 describe_pet('cat', 'mimi')
 describe_pet('fish', 'nemo')
+
+
+#order matters in positional arguments -  make sure the arguments are in the same order as the parameters in the function definition
