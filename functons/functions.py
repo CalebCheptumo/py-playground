@@ -95,3 +95,21 @@ describe_pet(animal_type = 'dog', pet_name = 'simba') #animal_type = 'dog' is a 
 describe_pet(pet_name = 'simba', animal_type = 'dog') #order of the arguments doesn't matter
 
 #be sure to use the exact names of the parameters in the function's definition
+
+
+#default values 
+#You can define a default value for each parameter.
+#Python uses the argument value  for a parameter if function call provides one.
+
+
+def  describe_pet(pet_name, animal_type='dog'): #default value for animal_type is 'dog'
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+
+describe_pet(pet_name = 'simba') #animal_type is not specified, so it defaults to 'dog'
+describe_pet('simba') #positional argument , but first parameter needs to be pet_name
+describe_pet(pet_name='mimi', animal_type='cat') #describe another animal other than dog(default value) , ignore the default value
+
+#when you use default values, any parameter with a default value needs to be listed after all the parameters that don't have default values. This allows Python to continue interpreting positional arguments correctly.
