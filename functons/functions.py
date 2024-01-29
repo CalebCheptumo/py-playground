@@ -64,3 +64,16 @@ def describe_pet(animal_type, pet_name): #animal_type and pet_name are parameter
     print(f"My {animal_type}'s name is {pet_name.title()}.")
 
 describe_pet('dog', 'simba') #dog is assigned to animal_type and simba is assigned to pet_name , these are arguments
+
+
+#multiple function calls
+#you can call a function as many times as needed
+
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+describe_pet('dog', 'simba')
+describe_pet('cat', 'mimi')
+describe_pet('fish', 'nemo')
