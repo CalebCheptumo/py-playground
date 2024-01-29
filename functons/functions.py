@@ -80,3 +80,18 @@ describe_pet('fish', 'nemo')
 
 
 #order matters in positional arguments -  make sure the arguments are in the same order as the parameters in the function definition
+
+ 
+#keyword arguments  - name-value pair that you pass to a function
+# You can also pass arguments as key-value pairs, where each argument consists of a variable name and a value. This way, the order of the arguments doesn't matter.
+
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+
+describe_pet(animal_type = 'dog', pet_name = 'simba') #animal_type = 'dog' is a keyword argument
+describe_pet(pet_name = 'simba', animal_type = 'dog') #order of the arguments doesn't matter
+
+#be sure to use the exact names of the parameters in the function's definition
