@@ -56,7 +56,7 @@ city = city_country('nairobi', 'kenya')
 print(city)
 
 
-#three city-county pairs
+#three city-country pairs
 def city_country(city, country):
     """Return a string like 'Santiago, Chile'"""
     return f"{city.title()}, {country.title()}"
@@ -68,3 +68,25 @@ city3 = city_country('kampala', 'uganda')
 print(city1)
 print(city2)
 print(city3)
+
+
+
+#album
+def make_album(artist, title, tracks='None'):
+    """Return a dictionary of information about an album"""
+    album = {'artist': artist, 'title': title}
+    if tracks:
+        album['tracks'] = tracks
+    return album
+
+album1 = make_album('khaligraph', 'testimony')
+album2 = make_album('sauti sol', 'midnight train')
+album3 = make_album('beyonce', 'lemonade')
+album4 = make_album('beyonce', 'lemonade', tracks=12)
+
+print(album1)
+print(album2)
+print(album3)
+print(album4)
+
+
