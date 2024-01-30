@@ -439,3 +439,9 @@ print(user_profile) # returns a dictionary containing everything we know about a
 #syntax from module_name import function_0, function_1, function_2
 
 
+#using as to give a function an alias
+#if the name of a function you are importing might conflict with an existing name in your program or if the function name is long, you can use a short, unique alias
+#unique alias - alternate name that is unique to the function and clearly different from the function's real name
+#syntax from module_name import function_name as fn
+
+
