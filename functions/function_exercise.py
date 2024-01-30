@@ -201,4 +201,14 @@ user_profile = build_profile('albert', 'einstein', location='princeton', field='
 print(user_profile)
 
 
+#cars
+def car_info(make, model, **car_details):
+    """Build a dictionary containing everything we know about a car"""
+    car_details['make'] = make
+    car_details['model'] = model
+    return car_details
+
+car = car_info('subaru', 'outback', color='blue', tow_package=True)
+print(car)
+
     
