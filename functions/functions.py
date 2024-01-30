@@ -382,3 +382,5 @@ def make_pizza(size, *toppings): # python assigns the first value it receives to
 
 make_pizza(12, 'pepperoni')
 make_pizza(16, 'mushrooms', 'green peppers', 'extra cheese')
+
+#generic parameter *args - collects arbitrary positional arguments like a tuple
