@@ -384,3 +384,10 @@ make_pizza(12, 'pepperoni')
 make_pizza(16, 'mushrooms', 'green peppers', 'extra cheese')
 
 #generic parameter *args - collects arbitrary positional arguments like a tuple
+
+def print_args(*args):  #function print_args() accepts an arbitrary number of arguments and prints each argument
+    """Print all arguments"""
+    for arg in args: # iterate over the arguments tuple and print each value
+        print(arg)
+
+print_args('apple', 'banana', 'cherry')
