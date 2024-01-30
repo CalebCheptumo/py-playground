@@ -350,3 +350,8 @@ print_models(unprinted_designs, completed_models) #call print_models() with the 
 show_completed_models(completed_models) #call show_completed_models() with the list of completed models
 
 #every function should have one specific job. The first function prints each design, and the second displays the completed models. This is more beneficial than using one function to do both jobs.
+
+#preventing a function from modifying a list
+#syntax function_name(list_name[:]) - the slice notation [:] makes a copy of the list to send to the function
+
+print_models(unprinted_designs[:], completed_models) #call print_models() with the two lists
