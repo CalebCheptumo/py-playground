@@ -355,3 +355,17 @@ show_completed_models(completed_models) #call show_completed_models() with the l
 #syntax function_name(list_name[:]) - the slice notation [:] makes a copy of the list to send to the function
 
 print_models(unprinted_designs[:], completed_models) #call print_models() with the two lists
+
+
+
+#passing an arbitrary number of arguments
+#Python allows a function to collect an arbitrary number of arguments from the calling statement
+
+def make_pizza(*toppings): #the asterisk in the parameter name *toppings tells Python to make an empty tuple called toppings and pack whatever values it receives into this tuple
+    """Print the list of toppings that have been requested"""
+    print(toppings) #print the tuple of toppings
+
+make_pizza('pepperoni') 
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+#Python packs the arguments into a tuple, even if the function receives only one value
