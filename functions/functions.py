@@ -214,3 +214,16 @@ def greet_user(username, greeting="Hello"): # function greet_user takes two para
 
 greet_user("Alice")  # Outputs: Hello, Alice!
 greet_user("Bob", "Welcome")  # Outputs: Welcome, Bob!
+
+
+
+#returning a dictionary
+#A function can return any kind of value you need it to, including more complicated data structures like lists and dictionaries.
+
+def build_person(first_name, last_name): #build_person() function takes first_name and last_name as parameters and puts them into a dictionary
+    """Return a dictionary of information about a person"""
+    person= {'first':first_name, 'last': last_name} #person is a dictionary that stores value of first_name is stored with the key 'first' and value of last_name is stored with the key 'last'
+    return person # return the dictionary
+
+musician = build_person('jimi', 'hendrix')
+print(musician)
