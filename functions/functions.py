@@ -205,3 +205,12 @@ print(musician)
 
 musician =get_formatted_name('john', 'hooker', 'lee')
 print(musician)
+
+
+
+def greet_user(username, greeting="Hello"): # function greet_user takes two parameters: username and greeting. greeting has a default value of "Hello"
+    """This function greets the user with an optional custom greeting."""
+    print(f"{greeting}, {username}!")
+
+greet_user("Alice")  # Outputs: Hello, Alice!
+greet_user("Bob", "Welcome")  # Outputs: Welcome, Bob!
