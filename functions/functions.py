@@ -433,3 +433,9 @@ print(user_profile) # returns a dictionary containing everything we know about a
 #syntax import module_name
 
 
+#importing specific function
+#syntax from module_name import function_name
+#you can as well import multiple functions from a module by separating each function's name with a comma
+#syntax from module_name import function_0, function_1, function_2
+
+
