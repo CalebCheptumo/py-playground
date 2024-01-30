@@ -301,4 +301,26 @@ def print_fruits(fruits):
 
 fruit_list = ['apple', 'banana', 'cherry']
 print_fruits(fruit_list)
+
+
+
+#modifying a list in a function
+# the function can permanently modify the list, and the changes are reflected in the original list
+
+#start with some designs that need to be printed
+unprinted_designs = ['Phone case', 'robot pendant', 'dodecahedron'] # list of designs that need to be printed
+completed_models = [] # empty list to store completed models
+
+#simulate printing each design , until none are left
+#move each design to completed_models after printing
+while unprinted_designs: 
+    current_design = unprinted_designs.pop() 
+    print(f"Printing model: {current_design}")
+    completed_models.append(current_design)
+
+#display all completed models
+print("\nThe following models have been printed:")
+for completed_model in completed_models:
+    print(completed_model)
+
     
