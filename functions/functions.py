@@ -393,11 +393,22 @@ def print_args(*args):  #function print_args() accepts an arbitrary number of ar
 print_args('apple', 'banana', 'cherry')
 
 # syntax *kwargs  which collects any remaining keyword arguments into a dictionary:
-
+# parameter **kwargs used to collect nonspecific keyword arguments
 def print_kwargs(**kwargs): #function print_kwargs() accepts an arbitrary number of keyword arguments and prints each argument
     """Print all keyword arguments"""
     print(kwargs)
 
 print_kwargs(wine='merlot', entree='mutton', dessert='macaroon')
 
+#using arbitrary keyword arguments
+#example is building user profiles
+
+def build_profile(first, last, **user_info): #function build_profile()  takes in a first and last name, and then it allows the user to pass in as many name-value pairs as they want
+    """Build a dictionary containing everything we know about a user """
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+user_profile = build_profile('albert', 'einstein', location='princeton', field='physics') #build_profile() takes in a first and last name, and then it allows the user to pass in as many name-value pairs as they want
+print(user_profile) # returns a dictionary containing everything we know about a user
 
