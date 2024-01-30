@@ -148,3 +148,19 @@ def describe_pet(animal_type,pet_name):
     print(f"My {animal_type}'s name is {pet_name.title()}.")
 
 describe_pet() #missing 2 required positional arguments: 'animal_type' and 'pet_name'
+
+
+
+#return values - the value the function returns.
+#A function can return a value or a set of values. When a function returns a value, the calling line must provide a variable in which to store the return value. A function stops running when it reaches a return statement.
+
+#returning a simple value
+#store first and last name separately and then call the function get_formatted_name() to combine them
+def get_formatted_name(first_name, last_name): # get_formatted_name() function takes  first_name, last_name as parameters
+    """Return a full name, neatly formatted"""
+    full_name = f"{first_name} {last_name}" #full_name is a variable that combines first_name and last_name
+    return full_name.title()
+
+
+musician = get_formatted_name('jimi', 'hendrix')
+print(musician)
