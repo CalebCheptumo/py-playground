@@ -293,4 +293,12 @@ def greet_users(names):
 usernames = ['hannah', 'ty', 'margot']
 greet_users(usernames)
 
+
+def print_fruits(fruits):
+    """Print all elements in a list"""
+    for fruit in fruits:
+        print(fruit)
+
+fruit_list = ['apple', 'banana', 'cherry']
+print_fruits(fruit_list)
     
