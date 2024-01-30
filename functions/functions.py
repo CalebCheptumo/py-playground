@@ -391,3 +391,13 @@ def print_args(*args):  #function print_args() accepts an arbitrary number of ar
         print(arg)
 
 print_args('apple', 'banana', 'cherry')
+
+# syntax *kwargs  which collects any remaining keyword arguments into a dictionary:
+
+def print_kwargs(**kwargs): #function print_kwargs() accepts an arbitrary number of keyword arguments and prints each argument
+    """Print all keyword arguments"""
+    print(kwargs)
+
+print_kwargs(wine='merlot', entree='mutton', dessert='macaroon')
+
+
