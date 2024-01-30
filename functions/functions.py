@@ -428,5 +428,8 @@ print(user_profile) # returns a dictionary containing everything we know about a
 
 
 
+#importing an entire module
+#a module is a file ending in .py that contains the code you want to import into your program
+#syntax import module_name
 
 
