@@ -45,3 +45,12 @@ def describe_city(city, country='Kenya'):
 describe_city('nairobi')
 describe_city('mombasa')
 describe_city('kampala', 'uganda')
+
+
+#city name
+def city_country(city, country):
+    """Return a string like 'Santiago, Chile'"""
+    return f"{city.title()}, {country.title()}"
+
+city = city_country('nairobi', 'kenya')
+print(city)
