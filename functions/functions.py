@@ -412,3 +412,21 @@ def build_profile(first, last, **user_info): #function build_profile()  takes in
 user_profile = build_profile('albert', 'einstein', location='princeton', field='physics') #build_profile() takes in a first and last name, and then it allows the user to pass in as many name-value pairs as they want
 print(user_profile) # returns a dictionary containing everything we know about a user
 
+
+
+#storing your functions in modules
+#storing your function in a separate file called a module then importing that module into your main program.
+#an import statement tells Python to make the code in a module available in the currently running program file.
+#this allows you to hide the details of your program's code and focus on its higher-level logic
+#it also allows you to reuse functions in many different programs
+#ways to import a module
+#import module_name
+#from module_name import function_name
+#from module_name import function_name as fn
+#import module_name as mn   
+#from module_name import *
+
+
+
+
+
