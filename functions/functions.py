@@ -147,7 +147,7 @@ def describe_pet(animal_type,pet_name):
     print(f"\nI have a {animal_type}.")
     print(f"My {animal_type}'s name is {pet_name.title()}.")
 
-describe_pet() #missing 2 required positional arguments: 'animal_type' and 'pet_name'
+#describe_pet() #missing 2 required positional arguments: 'animal_type' and 'pet_name'
 
 
 
@@ -173,3 +173,35 @@ def add_numbers( number1 , number2): #function add_numbers takes two parameters 
 
 result = add_numbers(2, 3)
 print(result)
+
+
+#making an argument optional
+#sometimes it makes sense to make an argument optional so that people using the function can choose to provide extra information only if they want to
+#You can use default values to make an argument optional. 
+#expand get_formatted_name() to handle middle names, but middle names aren't always needed, so make the middle name optional
+
+def get_formatted_name(first_name, middle_name, last_name): 
+    """Return a full name, neatly formatted"""
+    full_name = f"{first_name} {middle_name} {last_name}"
+    return full_name.title()
+
+
+musician = get_formatted_name('john', 'lee', 'hooker') 
+print(musician)
+
+#make middle name optional by giving it an empty default value and move it to the end of the list of parameters
+
+def get_formatted_name(first_name, last_name, middle_name=''): 
+    """Return a full name, neatly formatted"""
+    if middle_name:
+        full_name = f"{first_name} {middle_name} {last_name}"
+    else:
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+
+musician = get_formatted_name('john', 'hooker') 
+print(musician)
+
+musician =get_formatted_name('john', 'hooker', 'lee')
+print(musician)
