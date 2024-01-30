@@ -164,3 +164,12 @@ def get_formatted_name(first_name, last_name): # get_formatted_name() function t
 
 musician = get_formatted_name('jimi', 'hendrix')
 print(musician)
+
+
+def add_numbers( number1 , number2): #function add_numbers takes two parameters number1 and number2
+    """Add two numbers"""
+    sum = number1 + number2
+    return sum
+
+result = add_numbers(2, 3)
+print(result)
