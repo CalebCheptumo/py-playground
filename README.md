@@ -38,6 +38,10 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - 🔁 [While Loops](./user-input-and-while-loops/while_loops.py)
     - Understanding how to use while loops in Python.
 
+- 📝 Functions
+  - 📚 [Functions](./functions/functions.py)
+    - Learning how to define and use functions in Python.
+
 ## 💪 Exercises
 
 - 🏷️ [Name Cases](./variables-data-types/name_cases.py) 
@@ -60,6 +64,9 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - Exercise to test understanding of dictionaries in Python.
 - ⌨️ [User Input Exercise](./user-input-and-while-loops/input_exercise.py)
   - Exercise to test understanding of user input in Python.
+- 📚 [Function Exercise](./functions/function_exercise.py)
+  - Exercise to test understanding of functions in Python.
+
 
 
 Dive in and explore! 🏊‍♀️
