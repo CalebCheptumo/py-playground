@@ -227,3 +227,16 @@ def build_person(first_name, last_name): #build_person() function takes first_na
 
 musician = build_person('jimi', 'hendrix')
 print(musician)
+
+
+#extending to accept optional values
+
+def build_person(first_name, last_name, age= None): #age is an optional parameter with a special value None, which is used when a variable has no specific value assigned to it
+    """Return a dictionary of information about a person"""
+    person= {'first':first_name, 'last': last_name}
+    if age:
+        person['age'] = age
+    return person
+
+musician = build_person('jimi', 'hendrix', age=27)
+print(musician)
