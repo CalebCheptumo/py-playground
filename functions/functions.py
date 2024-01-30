@@ -323,4 +323,30 @@ print("\nThe following models have been printed:")
 for completed_model in completed_models:
     print(completed_model)
 
-    
+
+#refactoring
+
+def print_models(unprinted_designs, completed_models): #function print_models() takes two parameters: a list of designs that need to be printed and a list of completed models
+    """
+    Simulate printing each design, until none are left.
+    Move each design to completed_models after printing.
+    """
+    while unprinted_designs: 
+        current_design = unprinted_designs.pop() 
+        print(f"Printing model: {current_design}")
+        completed_models.append(current_design)
+
+def show_completed_models(completed_models): #function show_completed_models() takes a list of completed models as a parameter and displays each model that was printed
+    """Show all the models that were printed."""
+    print("\nThe following models have been printed:")
+    for completed_model in completed_models:
+        print(completed_model)
+
+
+unprinted_designs = ['Phone case', 'robot pendant', 'dodecahedron'] # list of designs that need to be printed
+completed_models = [] # empty list to store completed models
+
+print_models(unprinted_designs, completed_models) #call print_models() with the two lists
+show_completed_models(completed_models) #call show_completed_models() with the list of completed models
+
+#every function should have one specific job. The first function prints each design, and the second displays the completed models. This is more beneficial than using one function to do both jobs.
