@@ -369,3 +369,16 @@ make_pizza('pepperoni')
 make_pizza('mushrooms', 'green peppers', 'extra cheese')
 
 #Python packs the arguments into a tuple, even if the function receives only one value
+
+#looping through all values in a tuple
+
+def make_pizza(size, *toppings): # python assigns the first value it receives to the parameter size and packs the rest of the values into the tuple toppings
+    """Summarize the pizza we are about to make"""
+    print(f"\nMaking a {size} inch pizza with the following toppings:")
+
+    for topping in toppings:
+        print(f"- {topping}")
+
+
+make_pizza(12, 'pepperoni')
+make_pizza(16, 'mushrooms', 'green peppers', 'extra cheese')
