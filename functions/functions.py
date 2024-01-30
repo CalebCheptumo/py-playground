@@ -455,3 +455,17 @@ print(user_profile) # returns a dictionary containing everything we know about a
 #syntax : from module_name import *
 
 
+
+#styling functions.
+#descriptive names
+#lowercase letters and underscore
+#modules names should use the above conventions as well.
+#every function should have a comment that explains concisely what the function does
+#comments should appear immediately after function definition
+#if you specify a default value for parameter no space should be used on either side of equal sign
+# def function_name(parameter_0, parameter_1='default value')
+#as well as for keyword arguments
+#function_name(value_0, parameter_1='value')
+#79 char limit line
+#all imports statements should be written at the beginning of a file
+
