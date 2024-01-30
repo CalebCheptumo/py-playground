@@ -114,5 +114,13 @@ while True:
     print(album)
 
 
+#messages
+text_messages = ['hello', 'how are you?', 'what are you doing?']
 
+def show_messages(messages):
+    """Print all messages in a list"""
+    for message in messages:
+        print(message)
+
+show_messages(text_messages)
 
