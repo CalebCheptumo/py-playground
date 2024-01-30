@@ -167,3 +167,25 @@ print(text_messages)
 print(sent_messages)
 
 
+
+#sandwiches
+def make_sandwich(*items):
+    """Make a sandwich with the given items"""
+    print(items)
+
+make_sandwich('cheese')
+make_sandwich('cheese', 'ham')
+make_sandwich('cheese', 'ham', 'lettuce')
+
+
+def make_sandwich(*items):
+    """Make a sandwich with the given items"""
+    print("\nMaking a sandwich with the following items:")
+    for item in items:
+        print(f"- {item}")
+
+make_sandwich('cheese')
+make_sandwich('cheese', 'ham')
+make_sandwich('cheese', 'ham', 'lettuce')
+
+    
