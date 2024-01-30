@@ -444,4 +444,9 @@ print(user_profile) # returns a dictionary containing everything we know about a
 #unique alias - alternate name that is unique to the function and clearly different from the function's real name
 #syntax from module_name import function_name as fn
 
+#using as to give a module an alias
+#like p for pizza
+#calling p.make_pizza() is more concise than calling pizza.make_pizza():
+#syntax: import module_name as mn
+
 
