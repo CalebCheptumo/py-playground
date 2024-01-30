@@ -450,3 +450,8 @@ print(user_profile) # returns a dictionary containing everything we know about a
 #syntax: import module_name as mn
 
 
+#importing all functions in a module
+#using asterisk (*) operator to import every function in a module.
+#syntax : from module_name import *
+
+
