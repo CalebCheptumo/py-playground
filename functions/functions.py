@@ -245,24 +245,23 @@ print(musician)
 
 #using a function with a while loop
 
-def get_formatted_name(first_name, last_name):
-    """Return a full name, neatly formatted"""
-    full_name = f"{first_name} {last_name}"
-    return full_name.title()
+#def get_formatted_name(first_name, last_name):
+ #   """Return a full name, neatly formatted"""
+  #  full_name = f"{first_name} {last_name}"
+   # return full_name.title()
 
 #This is an infinite loop!
-while True:
-    print("\nPlease tell me your name:")
-    f_name = input("First name: ")
-    l_name = input("Last name: ")
+#while True:
+ #   print("\nPlease tell me your name:")
+  #  f_name = input("First name: ")
+   # l_name = input("Last name: ")
 
-    formatted_name = get_formatted_name(f_name, l_name)
-    print(f"\nHello, {formatted_name}")
+    #formatted_name = get_formatted_name(f_name, l_name)
+    #print(f"\nHello, {formatted_name}")
 
 
 #adding quit to infinity loop
-    
-def get_formatted_name(first_name,last_name):
+def get_formatted_name(first_name, last_name):
     """Return a full name, neatly formatted"""
     full_name = f"{first_name} {last_name}"
     return full_name.title()
@@ -282,5 +281,16 @@ while True:
         print(f"\nHello, {formatted_name}!")
 
 
+
+#passing a list
+
+def greet_users(names):
+    """Print a simple greeting to each user in the list"""
+    for name in names:
+        msg = f"Hello, {name.title()}!"
+        print(msg)
+
+usernames = ['hannah', 'ty', 'margot']
+greet_users(usernames)
 
     
