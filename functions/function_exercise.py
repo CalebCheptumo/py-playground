@@ -143,3 +143,27 @@ print("\nFinal lists:")
 print(text_messages)
 print(sent_messages)
 
+
+
+#archived messages
+text_messages = ['hello', 'how are you?', 'what are you doing?']
+sent_messages = []
+
+def send_messages(messages, sent_messages):
+    """Print each message and move it to sent_messages"""
+    while messages:
+        current_message = messages.pop()
+        print(f"Sending message: {current_message}")
+        sent_messages.append(current_message)
+
+def show_messages(messages):
+    """Print all messages in a list"""
+    for message in messages:
+        print(message)
+
+send_messages(text_messages[:], sent_messages)
+print("\nFinal lists:")
+print(text_messages)
+print(sent_messages)
+
+
