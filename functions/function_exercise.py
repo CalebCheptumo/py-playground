@@ -54,3 +54,17 @@ def city_country(city, country):
 
 city = city_country('nairobi', 'kenya')
 print(city)
+
+
+#three city-county pairs
+def city_country(city, country):
+    """Return a string like 'Santiago, Chile'"""
+    return f"{city.title()}, {country.title()}"
+
+city1 = city_country('nairobi', 'kenya')
+city2 = city_country('mombasa', 'kenya')
+city3 = city_country('kampala', 'uganda')
+
+print(city1)
+print(city2)
+print(city3)
