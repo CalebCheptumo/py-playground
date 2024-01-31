@@ -73,3 +73,12 @@ class Dog:
 my_dog = Dog('simba', 4) #we create an instance of dog and store it in my_dog
 print(f"My dog's name is {my_dog.name} .")
 print(f"My dog is {my_dog.age} years old. ")
+
+
+
+
+#accessing attributes
+#use dot notation to access the attributes of an instance.
+#syntax: instance_name.attribute_name
+my_dog.name #access the value of my_dog's attribute name by writing: my_dog.name
+#same approach as self.name / self.age in the class definition
