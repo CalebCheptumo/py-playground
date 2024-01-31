@@ -46,3 +46,30 @@ class Dog: #define a class called Dog that inherits from the base class object, 
 #self.name = names takes the value stored in the parameter name and stores it in the variable name, which is then attached to the instance being created. the same process happens with self.age = age. variables that are accessible through instances like this are called attributes.
 #Dog class has two other methods defined: sit() and roll_over(). because these methods don't need additional information like a name or age, we just define them to have one parameter, self. the instances we create later will have access to these methods.
 #sit() and roll_over() have print() call that output text to the screen. there are no other actions associated with sit() and roll_over() for now, but they could do just about anything you tell them to.
+        
+
+
+
+#making an instance from a class
+#think of a class as a set of instructions for how to make an instance. the class Dog is a set of instructions that tells python how to make individual instances representing specific dogs.
+        
+
+class Dog:
+    """A simple attempt to model a dog"""
+
+    def __init__(self, name, age):
+        """Initialize name and age attributes"""
+        self.name = name
+        self.age = age
+
+    def sit(self):
+        """Simulate a dog sitting in response to a command"""
+        print(f"{self.name} is now sitting. ")
+
+    def roll_over(self):
+        """Simulate rolling over in response to a command. """
+        print(f"{self.name} rolled over!")
+#we tell python to create a dog whose name is 'simba' and whose age is 4. when python reads this line, it calls the __init__() method in Dog with the arguments 'simba' and 4. the __init__() method creates an instance representing this particular dog and sets the name and age attributes using the values we provided. the __init__() method has no explicit return statement, but python automatically returns an instance representing this dog. we assign that instance to the variable my_dog. the naming convention is helpful here: we can usually assume that a capitalized name like Dog refers to a class, and a lowercase name like my_dog refers to a single instance created from a class.
+my_dog = Dog('simba', 4) #we create an instance of dog and store it in my_dog
+print(f"My dog's name is {my_dog.name} .")
+print(f"My dog is {my_dog.age} years old. ")
