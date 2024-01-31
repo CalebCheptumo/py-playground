@@ -113,3 +113,22 @@ your_dog.sit()
 #working with classes and instances
 #you can use classes to represent many real-world situations.
 #You can modify the attributes of an instance directly or write methods that update attributes in specific ways.
+
+
+#the car class
+class Car:
+    """A simple attempt to represent a car. """
+
+    def __init__(self, make, model, year): #__init__() method takes in parameters to create an instance representing a particular car. when we make a new car, we'll need to specify a make, model, and year for it.
+        """Initialize attributes to describe a car. """
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def get_descriptive_name(self): # define a method called get_descriptive_name() that puts a car's year, make, and model into one string neatly describing the car.
+        """Return a neatly formatted descriptive name. """
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()    
+    
+my_new_car = Car('audi', 'a4', 2024)
+print(my_new_car.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have
