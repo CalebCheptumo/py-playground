@@ -166,3 +166,11 @@ my_new_car.read_odometer() #call read_odometer() method to see the car's mileage
 #1. change the value directly through an instance
 #2. set the value through a method
 #3. increment the value (add a certain amount to it) through a method
+
+#1. changing the value directly
+#setting the odometer_reading attribute's value to 23 directly through the instance
+
+my_new_car = Car('audi', 'a4', 2024)
+print(my_new_car.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have
+my_new_car.odometer_reading = 23 #setting the odometer_reading attribute's value to 23 directly through the instance. this line tells python to take the instance my_new_car, find the attribute odometer_reading associated with it, and set the value of that attribute to 23. we use dot notation to access the attribute odometer_reading and then assign a new value to that attribute.
+my_new_car.read_odometer() #call read_odometer() method to see the car's mileage
