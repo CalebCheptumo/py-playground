@@ -30,3 +30,19 @@ class Dog: #define a class called Dog that inherits from the base class object, 
     def roll_over(self):
         """Simulate rolling over in response to a command. """
         print(f"{self.name} rolled over!")
+
+
+#the __init__() method
+#a function that is part of a class is a method.
+##concept in function apply in class
+#the __init__() method is  a special method that python runs automatically whenever we create a new instance based on the Dog class
+##__init__() has leading and trailing double underscores, a convention that helps prevent Python's default method names from conflicting with your method names.
+#in our case we defined the __init__() to have three parameters : self,name and age
+#self parameter is required in the method definition and must come first before the other parameters.
+#self must be included in the definition  because when python calls this method later (to create instance of Dog) the method call will automatically pass the self argument.
+#every method call associated with a class automatically passes self, which is a reference to the instance itself; it gives the individual instance access to the attributes and methods in the class.
+#when we make an instance of Dog, python will call the __init__() method from the Dog class. we'll pass Dog() a name and an age as arguments; self is passed automatically, so we don't need to pass it. whenever we want to make an instance from the Dog class, we'll provide values for only the last two parameters, name and age.
+#two variables defined in the __init__() method have the prefix self. any variable prefixed with self is available to every method in the class, and we'll also be able to access these variables through any instance created from the class.
+#self.name = names takes the value stored in the parameter name and stores it in the variable name, which is then attached to the instance being created. the same process happens with self.age = age. variables that are accessible through instances like this are called attributes.
+#Dog class has two other methods defined: sit() and roll_over(). because these methods don't need additional information like a name or age, we just define them to have one parameter, self. the instances we create later will have access to these methods.
+#sit() and roll_over() have print() call that output text to the screen. there are no other actions associated with sit() and roll_over() for now, but they could do just about anything you tell them to.
