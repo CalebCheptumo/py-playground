@@ -107,3 +107,9 @@ my_dog.sit() #call sit() method for my_dog instance of Dog class
 print(f"\nYour dog's name is {your_dog.name} .")
 print(f"Your dog is {your_dog.age} years old. ")
 your_dog.sit()
+
+
+
+#working with classes and instances
+#you can use classes to represent many real-world situations.
+#You can modify the attributes of an instance directly or write methods that update attributes in specific ways.
