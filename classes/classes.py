@@ -159,3 +159,10 @@ class Car:
 my_new_car = Car('audi', 'a4', 2024)
 print(my_new_car.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have
 my_new_car.read_odometer() #call read_odometer() method to see the car's mileage
+
+
+#modifying attribute values
+#we can change the value in three ways:
+#1. change the value directly through an instance
+#2. set the value through a method
+#3. increment the value (add a certain amount to it) through a method
