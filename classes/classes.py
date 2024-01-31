@@ -92,3 +92,18 @@ my_dog.name #access the value of my_dog's attribute name by writing: my_dog.name
 my_dog = Dog('simba', 4) #we create an instance of dog and store it in my_dog
 my_dog.sit() #call sit() method
 my_dog.roll_over() #call roll_over() method
+
+
+#creating multiple instances
+#we can create as many instances from one class as we need, as long as we give each instance a unique variable name or it occupies a unique spot in a list or dictionary.
+
+my_dog = Dog('simba', 4) #we create an instance of dog and store it in my_dog
+your_dog = Dog('lucy', 3) #we create an instance of dog and store it in your_dog
+
+print(f"My dog's name is {my_dog.name} .")
+print(f"My dog is {my_dog.age} years old. ")
+my_dog.sit() #call sit() method for my_dog instance of Dog class 
+
+print(f"\nYour dog's name is {your_dog.name} .")
+print(f"Your dog is {your_dog.age} years old. ")
+your_dog.sit()
