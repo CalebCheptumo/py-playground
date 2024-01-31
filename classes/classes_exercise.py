@@ -47,3 +47,37 @@ restaurant3 = Restaurant('dominos', 'pizza')
 restaurant1.describe_restaurant()
 restaurant2.describe_restaurant()
 restaurant3.describe_restaurant()
+
+
+#users
+class User:
+    def __init__(self, first_name, last_name, age, location):
+        """Initialize name and age attributes"""
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.location = location
+    
+    def describe_user(self):
+        """Describe the user"""
+        print(f"The user's name is {self.first_name.title()} {self.last_name.title()} .")
+        print(f"The user's age is {self.age} .")
+        print(f"The user's location is {self.location.title()} .")
+
+    def greet_user(self):
+        """Greet the user"""
+        print(f"Hello, {self.first_name.title()} {self.last_name.title()} .")
+
+
+user1 = User('john', 'smith', 20, 'nairobi')
+user2 = User('jane', 'doe', 25, 'nakuru')
+user3 = User('james', 'bond', 30, 'mombasa')
+
+
+user1.describe_user()
+user1.greet_user()
+user2.describe_user()
+user2.greet_user()
+user3.describe_user()
+user3.greet_user()
+
