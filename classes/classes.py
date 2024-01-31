@@ -82,3 +82,13 @@ print(f"My dog is {my_dog.age} years old. ")
 #syntax: instance_name.attribute_name
 my_dog.name #access the value of my_dog's attribute name by writing: my_dog.name
 #same approach as self.name / self.age in the class definition
+
+
+
+#calling methods
+#after we create an instance from the class Dog, we can use dot notation to call any method defined in Dog.
+#syntax: instance_name.method_name()
+
+my_dog = Dog('simba', 4) #we create an instance of dog and store it in my_dog
+my_dog.sit() #call sit() method
+my_dog.roll_over() #call roll_over() method
