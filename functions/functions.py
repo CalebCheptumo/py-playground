@@ -469,3 +469,13 @@ print(user_profile) # returns a dictionary containing everything we know about a
 #79 char limit line
 #all imports statements should be written at the beginning of a file
 
+
+
+
+#summary
+#how to write function nd to pass arguments to them
+#how to use positional and keyword arguments
+#how to accept arbitrary arguments
+#how to use function with lists,dictionaries,if statements and while loops
+#how to store functions in separate files called modules
+
