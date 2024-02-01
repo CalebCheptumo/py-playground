@@ -290,3 +290,10 @@ my_used_car.increment_odometer(100) #call increment_odometer() method and give i
 my_used_car.read_odometer() #call read_odometer() method to see the car's mileage
 
 #you can also modify to reject negative increments so no one uses this function to roll back an odometer
+
+
+
+#inheritance
+#inheritance is a way to form new classes using classes that have already been defined.
+#original class is called parent class, and the new class is the child class.
+#child class inherits the attributes and methods from its parent class, but it can also define new attributes and methods of its own.
