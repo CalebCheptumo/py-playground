@@ -443,3 +443,7 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 
 #Importing classes
 #python lets you store classes in modules and then import the classes you need into your main program.
+
+
+#importing a single class
+#store the class in a module, then import the module into your main program.
