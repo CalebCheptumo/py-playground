@@ -158,3 +158,24 @@ print(user1.login_attempts)
 
 user1.reset_login_attempts()
 print(user1.login_attempts)
+
+
+#ice cream stand
+class IceCreamStand(Restaurant):
+
+    def __init__(self, restaurant_name, cuisine_type):
+        """Initialize attributes of the parent class"""
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = []
+
+    def show_flavors(self):
+        """Display the flavors available"""
+        print("\nWe have the following flavors available:")
+        for flavor in self.flavors:
+            print(f"- {flavor.title()}")
+
+ice_cream_stand = IceCreamStand('kfc', 'fast food')
+ice_cream_stand.flavors = ['vanilla', 'chocolate', 'strawberry']
+
+ice_cream_stand.describe_restaurant()
+ice_cream_stand.show_flavors()
