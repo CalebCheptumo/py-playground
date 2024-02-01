@@ -459,3 +459,11 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 #importing multiple classes from a module
 #syntax: from module_name import * or from module_name import Classname1, Classname2, Classname3
 # import multiple classes from a module by separating each class name with a comma.
+
+
+
+#importing an entire module
+#syntax: import module_name
+#you can also import an entire module and then access the classes you need using dot notation.
+#syntax: module_name.Classname
+#this approach is simple and results in code that is easy to read. because every call that creates an instance of a class includes the module name, you won't have naming conflicts with any names used in the current file.
