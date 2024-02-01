@@ -297,7 +297,8 @@ my_used_car.read_odometer() #call read_odometer() method to see the car's mileag
 #inheritance is a way to form new classes using classes that have already been defined.
 #original class is called parent class, and the new class is the child class.
 #child class inherits the attributes and methods from its parent class, but it can also define new attributes and methods of its own.
-
+#syntax: class ChildClass(ParentClass): #define the child class with its parent class in parentheses.
 #the __init__() method for a child class
 #__init__() method initializes any attributes that were defined in the parent __init__() method.
+
 
