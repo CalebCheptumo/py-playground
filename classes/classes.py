@@ -361,3 +361,66 @@ class ElectricCar(Car): # name of the parent class must be included in parenthes
         print("This car doesn't need a gas tank! ")
 
 
+
+
+
+#instances as attributes
+#you can break your large class into smaller classes that work together. This approach is called composition.
+        
+class Car:
+    """A simple attempt to represent a car. """
+
+    def __init__(self, make, model, year): #__init__() method takes in parameters to create an instance representing a particular car. when we make a new car, we'll need to specify a make, model, and year for it.
+        """Initialize attributes to describe a car. """
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0 #setting a default value for an attribute
+
+    def get_descriptive_name(self): # define a method called get_descriptive_name() that puts a car's year, make, and model into one string neatly describing the car.
+        """Return a neatly formatted descriptive name. """
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()    
+    
+    def read_odometer(self): #define a method called read_odometer() that lets us read the odometer
+        """Print a statement showing the car's mileage. """
+        print(f"This car has {self.odometer_reading} miles on it. ")
+
+    def update_odometer(self, mileage): #define a method called update_odometer() that lets us update the odometer reading
+        """Set the odometer reading to the given value. """
+        if mileage >= self.odometer_reading: #add a conditional test that makes sure no one tries to roll back the odometer reading
+            self.odometer_reading = mileage #take in a mileage parameter and set the odometer_reading attribute to that value
+        else:
+            print("You can't roll back an odometer!")
+
+    def increment_odometer(self, miles): #define a method called increment_odometer() that lets us add a given amount to the odometer reading. takes in a number of miles and adds this value to self.odometer_reading
+        """Add the given amount to the odometer reading. """
+        self.odometer_reading += miles #add whatever value we specify to the odometer reading
+
+class Battery: #new class called Battery that doesn't inherit from any other class
+    """A simple attempt to model a battery for an electric car. """
+
+    def __init__(self, battery_size=75): #initialize the battery's attributes. the __init__() method has one parameter, battery_size, in addition to self. this parameter has a default value of 75 if no value is provided.
+        """Initialize the battery's attributes. """
+        self.battery_size = battery_size
+
+    def describe_battery(self): #add a method called describe_battery() that prints information about the battery size
+        """Print a statement describing the battery size. """
+        print(f"This car has a {self.battery_size}-kWh battery. ")
+
+  
+class ElectricCar(Car): # name of the parent class must be included in parentheses in the definition of the child class. the __init__() method takes in the information required to make a Car instance.
+    """Represents aspect of a car, specific to electric vehicles"""
+    
+    def __init__(self, make, model, year): #initialize attributes of the parent class. takes in the information required to make a Car instance.
+        """Initialize attributes of the parent class.
+         Then initialize attributes specific to an electric car. """
+        super().__init__(make, model, year) #super() function is a special function that helps python make connections between the parent and child class. this line tells python to call the __init__() method from ElectricCar's parent class, which gives an ElectricCar instance all the attributes of its parent class. the name super comes from a convention of calling the parent class a superclass and the child class a subclass.
+        self.battery = Battery() #add an attribute called battery and set its initial value to an instance of Battery. when the __init__() method runs, it stores a Battery instance in the attribute self.battery. this will happen every time the __init__() method is called; any ElectricCar instance will now have a Battery instance created automatically.
+
+  
+my_tesla = ElectricCar('tesla', 'model s', 2024) #make instance from the child class ElectricCar and store/assign to/ it in my_tesla
+print(my_tesla.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have
+my_tesla.battery.describe_battery() #call describe_battery() method to see the battery size
+
+
