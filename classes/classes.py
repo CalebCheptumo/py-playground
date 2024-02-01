@@ -433,3 +433,7 @@ print(my_tesla.get_descriptive_name()) #call get_descriptive_name() method  to s
 my_tesla.battery.describe_battery() #call describe_battery() method to see the battery size
 my_tesla.battery.get_range() #call get_range() method to see the range of the battery
 
+
+
+#modeling real-world objects -
+#Real-world objects can be much more complex, with many more attributes and methods, and relationships with other objects. But the basic process of identifying objects, defining classes, defining attributes and methods, creating instances, and using the objects remains the same.
