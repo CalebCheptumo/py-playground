@@ -454,3 +454,8 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 #storing multiple classes in a module
 #you can store as many classes as you need in a single module, although each class in a module should be related somehow.
 #syntax: from module_name import Classname1, Classname2, Classname3
+
+
+#importing multiple classes from a module
+#syntax: from module_name import * or from module_name import Classname1, Classname2, Classname3
+# import multiple classes from a module by separating each class name with a comma.
