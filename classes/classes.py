@@ -302,3 +302,13 @@ my_used_car.read_odometer() #call read_odometer() method to see the car's mileag
 #__init__() method initializes any attributes that were defined in the parent __init__() method.
 
 
+class ElectricCar(Car): # name of the parent class must be included in parentheses in the definition of the child class. the __init__() method takes in the information required to make a Car instance.
+    """Represents aspect of a car, specific to electric vehicles"""
+
+    def __init__(self, make, model, year): #initialize attributes of the parent class. takes in the information required to make a Car instance.
+        """Initialize attributes of the parent class. """
+        super().__init__(make, model, year) #super() function is a special function that helps python make connections between the parent and child class. this line tells python to call the __init__() method from ElectricCar's parent class, which gives an ElectricCar instance all the attributes of its parent class. the name super comes from a convention of calling the parent class a superclass and the child class a subclass.
+
+
+my_leaf = ElectricCar('nissan', 'leaf', 2024) #make instance from the child class ElectricCar and store/assign to/ it in my_leaf
+print(my_leaf.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have  
