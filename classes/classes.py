@@ -437,3 +437,9 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 
 #modeling real-world objects -
 #Real-world objects can be much more complex, with many more attributes and methods, and relationships with other objects. But the basic process of identifying objects, defining classes, defining attributes and methods, creating instances, and using the objects remains the same.
+
+
+
+
+#Importing classes
+#python lets you store classes in modules and then import the classes you need into your main program.
