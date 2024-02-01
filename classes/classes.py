@@ -447,3 +447,5 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 
 #importing a single class
 #store the class in a module, then import the module into your main program.
+#syntax: from module_name import Classname
+#importing classes is an effective way to program. you store most of your logic in separate files. then in your main program you import the classes you need, and make instances from those classes as needed.
