@@ -42,6 +42,10 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - 📚 [Functions](./functions/functions.py)
     - Learning how to define and use functions in Python.
 
+- 🏗️ Classes
+  - 📚 [Classes](./classes/classes.py)
+    - Learning how to define and use classes in Python.
+
 ## 💪 Exercises
 
 - 🏷️ [Name Cases](./variables-data-types/name_cases.py) 
@@ -66,6 +70,8 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - Exercise to test understanding of user input in Python.
 - 📚 [Function Exercise](./functions/function_exercise.py)
   - Exercise to test understanding of functions in Python.
+- 🏗️ [Classes Exercise](./classes/classes_exercise.py)
+  - Exercise to test understanding of classes in Python.
 
 
 
