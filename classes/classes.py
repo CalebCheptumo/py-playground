@@ -408,6 +408,15 @@ class Battery: #new class called Battery that doesn't inherit from any other cla
         """Print a statement describing the battery size. """
         print(f"This car has a {self.battery_size}-kWh battery. ")
 
+    def get_range(self): #add a method called get_range() that prints a statement about the range this battery provides
+        """Print a statement about the range this battery provides. """
+        if self.battery_size == 75:
+            range = 260
+        elif self.battery_size == 100:
+            range = 315
+        
+        print(f"This car can go about {range} miles on a full charge. ")
+
   
 class ElectricCar(Car): # name of the parent class must be included in parentheses in the definition of the child class. the __init__() method takes in the information required to make a Car instance.
     """Represents aspect of a car, specific to electric vehicles"""
@@ -422,5 +431,5 @@ class ElectricCar(Car): # name of the parent class must be included in parenthes
 my_tesla = ElectricCar('tesla', 'model s', 2024) #make instance from the child class ElectricCar and store/assign to/ it in my_tesla
 print(my_tesla.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have
 my_tesla.battery.describe_battery() #call describe_battery() method to see the battery size
-
+my_tesla.battery.get_range() #call get_range() method to see the range of the battery
 
