@@ -312,3 +312,26 @@ class ElectricCar(Car): # name of the parent class must be included in parenthes
 
 my_leaf = ElectricCar('nissan', 'leaf', 2024) #make instance from the child class ElectricCar and store/assign to/ it in my_leaf
 print(my_leaf.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have  
+
+
+#defining attributes and methods for the child class
+#you can as well add new attributes and methods to the child class that are not part of the parent class.
+#add specific attributes and methods to the child class that are not appropriate for the parent class.
+
+class ElectricCar(Car): # name of the parent class must be included in parentheses in the definition of the child class. the __init__() method takes in the information required to make a Car instance.
+    """Represents aspect of a car, specific to electric vehicles"""
+
+    def __init__(self, make, model, year): #initialize attributes of the parent class. takes in the information required to make a Car instance.
+        """Initialize attributes of the parent class.
+         Then initialize attributes specific to an electric car. """
+        super().__init__(make, model, year) #super() function is a special function that helps python make connections between the parent and child class. this line tells python to call the __init__() method from ElectricCar's parent class, which gives an ElectricCar instance all the attributes of its parent class. the name super comes from a convention of calling the parent class a superclass and the child class a subclass.
+        self.battery_size = 75 #add an attribute called battery_size and set its initial value to 75 . will only be associated with subclasses like ElectricCar but not with its parent class Car.
+
+    def describe_battery(self): #add a method called describe_battery() that prints information about the battery
+        """Print a statement describing the battery size. """
+        print(f"This car has a {self.battery_size}-kWh battery. ")
+
+
+my_leaf = ElectricCar('nissan', 'leaf', 2024) #make instance from the child class ElectricCar and store/assign to/ it in my_leaf
+print(my_leaf.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have
+my_leaf.describe_battery() #call describe_battery() method to see the battery size
