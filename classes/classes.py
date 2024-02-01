@@ -244,3 +244,49 @@ my_new_car.update_odometer(23) #call update_odometer() method and give it 23 as 
 my_new_car.read_odometer() #call read_odometer() method to see the car's mileage
 
 my_new_car.update_odometer(20) #call update_odometer() method and give it 20 as the argument
+
+
+
+#3. incrementing an attribute's value through a method
+#incrementing an attribute's value by certain amount rather than set an entirely new value.
+
+class Car:
+    """A simple attempt to represent a car. """
+
+    def __init__(self, make, model, year): #__init__() method takes in parameters to create an instance representing a particular car. when we make a new car, we'll need to specify a make, model, and year for it.
+        """Initialize attributes to describe a car. """
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0 #setting a default value for an attribute
+
+    def get_descriptive_name(self): # define a method called get_descriptive_name() that puts a car's year, make, and model into one string neatly describing the car.
+        """Return a neatly formatted descriptive name. """
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()    
+    
+    def read_odometer(self): #define a method called read_odometer() that lets us read the odometer
+        """Print a statement showing the car's mileage. """
+        print(f"This car has {self.odometer_reading} miles on it. ")
+
+    def update_odometer(self, mileage): #define a method called update_odometer() that lets us update the odometer reading
+        """Set the odometer reading to the given value. """
+        if mileage >= self.odometer_reading: #add a conditional test that makes sure no one tries to roll back the odometer reading
+            self.odometer_reading = mileage #take in a mileage parameter and set the odometer_reading attribute to that value
+        else:
+            print("You can't roll back an odometer!")
+
+    def increment_odometer(self, miles): #define a method called increment_odometer() that lets us add a given amount to the odometer reading. takes in a number of miles and adds this value to self.odometer_reading
+        """Add the given amount to the odometer reading. """
+        self.odometer_reading += miles #add whatever value we specify to the odometer reading
+
+my_used_car = Car('subaru', 'outback', 2015)
+print(my_used_car.get_descriptive_name()) #call get_descriptive_name() method  to see what kind of car we have
+
+my_used_car.update_odometer(23_500) #call update_odometer() method and give it 23_500 as the argument . we use an underscore when working with larger numbers to make them easier to read
+my_used_car.read_odometer() #call read_odometer() method to see the car's mileage
+
+my_used_car.increment_odometer(100) #call increment_odometer() method and give it 100 as the argument
+my_used_car.read_odometer() #call read_odometer() method to see the car's mileage
+
+#you can also modify to reject negative increments so no one uses this function to roll back an odometer
