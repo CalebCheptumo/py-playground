@@ -332,3 +332,6 @@ my_tesla.battery.get_range()
 
 
 #dice
+
+# python module of the week - website
+#https://pymotw.com/

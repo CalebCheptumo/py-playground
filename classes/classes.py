@@ -511,3 +511,5 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 
 #random module should not be used when building security related applications.
 #you can also download modules from the internet and install them on your system.
+
+
