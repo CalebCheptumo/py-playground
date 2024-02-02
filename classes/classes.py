@@ -504,3 +504,10 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 # random module is a good example of a module that is part of the python standard library.
 # random module can be used to generate random numbers, choose a random item from a list, and shuffle a list.
 #randint() function takes two integer arguments and returns a random integer between those two integers.
+
+
+
+#choice() function  takes in a list or tuple and returns a randomly chosen element.
+
+#random module should not be used when building security related applications.
+#you can also download modules from the internet and install them on your system.
