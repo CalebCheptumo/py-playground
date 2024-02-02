@@ -480,3 +480,8 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 
 
 #importing a module into a module
+#you can also import an entire module into another module.
+#syntax: import module_name
+#when you import an entire module into a module, you can access the classes from the imported module by using the dot notation.
+#syntax: module_name.Classname
+#this approach allows you to organize your modules and keep your code clean.
