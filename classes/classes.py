@@ -521,3 +521,26 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 #each module should also have a docstring describing what the classes in a module can be used for.
 #you should indent your code using four spaces.
 #if you need to import a module from the standard library and a module that you wrote, place the import statement for the standard library module first, and then the import statement for the module you wrote. the blank line between the two import statements makes it easy to see where the standard library module stops and the module you wrote begins.
+
+
+
+#summary
+#1. classes are used to represent real-world things and situations, and help you model real-world situations.
+#2. you can use classes to model a wide variety of real-world situations.
+#3. creating a new instance from a class is called instantiation.
+#4. you can store your classes in modules and then import the classes you need into your main program.
+#5. python standard library is a set of modules included with every python installation.
+#6. every class should have a docstring immediately following the class definition.
+#7. you should indent your code using four spaces.
+#8. if you need to import a module from the standard library and a module that you wrote, place the import statement for the standard library module first, and then the import statement for the module you wrote. the blank line between the two import statements makes it easy to see where the standard library module stops and the module you wrote begins.
+#9. class names should be written in CamelCase.
+#10. instance and module names should be written in lowercase with underscores between words.
+#11. each module should also have a docstring describing what the classes in a module can be used for.
+#12. random module is a good example of a module that is part of the python standard library.
+#13. random module can be used to generate random numbers, choose a random item from a list, and shuffle a list.
+#14. random module should not be used when building security related applications.
+#15. you can also download modules from the internet and install them on your system.
+#16. you can use any function or class in the standard library by including a simple import statement at the top of your file.
+#17. using alias to import a module is helpful when using modules to organize your project code.
+#18. importing a module into a module is also possible.
+#19. importing all classes from a module is not recommended for two reasons.
