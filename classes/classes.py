@@ -476,3 +476,7 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 #this method is not recommended for two reasons:
 #1. it's helpful to be able to read the import statements at the top of a file and get a clear sense of which classes a program uses. with this approach it's unclear which classes you're using from the module.
 #2. if you accidentally import a class with the same name as something else in your program file, you can create errors that are hard to diagnose. python may see several classes or functions with the same name, and instead of importing all the classes separately, it will overwrite the functions or classes defined earlier in the file. avoid using this approach when working with larger programs.
+
+
+
+#importing a module into a module
