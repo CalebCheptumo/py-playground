@@ -494,3 +494,13 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 
 #using alias to import a module
 #syntax: import module_name as mn
+
+
+
+#python standard library
+# python standard library is a set of modules included with every python installation.
+# you can use any function or class in the standard library by including a simple import statement at the top of your file.
+# python standard library is well documented and is a great source of tools and techniques for your own projects.
+# random module is a good example of a module that is part of the python standard library.
+# random module can be used to generate random numbers, choose a random item from a list, and shuffle a list.
+#randint() function takes two integer arguments and returns a random integer between those two integers.
