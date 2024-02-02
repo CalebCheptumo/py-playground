@@ -513,3 +513,11 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 #you can also download modules from the internet and install them on your system.
 
 
+#styling classes
+#class names should be written in CamelCase.
+#instance and module names should be written in lowercase with underscores between words.
+#every class should have a docstring immediately following the class definition. the docstring should be a brief description of what the class does.
+# doc strings should be written in triple quotes, and they should describe what the class does, and the behavior of instances from the class.
+#each module should also have a docstring describing what the classes in a module can be used for.
+#you should indent your code using four spaces.
+#if you need to import a module from the standard library and a module that you wrote, place the import statement for the standard library module first, and then the import statement for the module you wrote. the blank line between the two import statements makes it easy to see where the standard library module stops and the module you wrote begins.
