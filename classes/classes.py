@@ -485,3 +485,9 @@ my_tesla.battery.get_range() #call get_range() method to see the range of the ba
 #when you import an entire module into a module, you can access the classes from the imported module by using the dot notation.
 #syntax: module_name.Classname
 #this approach allows you to organize your modules and keep your code clean.
+
+
+#using alias
+#helpful when using modules to organize your project code.
+#syntax: from module_name import Classname as cn
+#lest take example when we want to make bunch of electric cars and a bunch of gas cars. we can use alias to make the code more readable and less confusing.
