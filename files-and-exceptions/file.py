@@ -44,3 +44,11 @@
 # is your birthday contained in pi?
 #find out if someones birthday appears anywhere in the first million digits of pi.
 # we will express each birthday as a string and see if the string appears anywhere in pi_string.
+
+
+#writing to a file
+# writing to a file is similar to reading from a file. you can write to an existing file or to a new file.
+
+#writing a single file
+#once you have  a path defined you can write to a file using the write_text() method,
+#syntax: path.write_text("string")
