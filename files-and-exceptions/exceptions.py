@@ -5,3 +5,7 @@
 #Exceptions are handled with try-except blocks.
 #A try-except block asks Python to do something, but it also tells Python what to do if an exception is raised.
 #When you use try-except blocks, your programs will continue running even if things start to go wrong.
+
+
+#Handling the ZeroDivisionError Exception
+#When you try to divide by zero, Python raises an exception because it can’t carry out the division.
