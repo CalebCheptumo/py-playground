@@ -12,3 +12,7 @@ for line in lines: #loop that adds line of digits to pi_string
 
 print(pi_string) #print the string
 print(len(pi_string)) # print the length of the string
+
+#you can as well use int() function to convert the string to an integer
+# and float() function to convert the string to a floating-point number
+#syntax: int(string) or float(string)
