@@ -31,3 +31,7 @@
 #you might want to read through a file of weather data and work  with any line that includes the word sunny in description of that days weather.
 #use splitlines() method to turn a long string into a set of lines the use a for loop to examine each line from a file at atime
 
+
+
+#working with file contents
+# since we have read the contents of a file into memory we can do whatever we want with the data.
