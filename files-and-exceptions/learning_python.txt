@@ -1,0 +1,4 @@
+In Python you can easily manipulate strings.
+In Python you can write functions to perform repetitive tasks.
+In Python you can handle files and work with external data.
+In Python you can use libraries to perform complex tasks.
