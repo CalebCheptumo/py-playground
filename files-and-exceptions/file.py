@@ -35,3 +35,7 @@
 
 #working with file contents
 # since we have read the contents of a file into memory we can do whatever we want with the data.
+
+
+# Large Files: One Million Digits
+# the syntax applies to even file that contains a large amount of data. you will just need to change the path.
