@@ -9,3 +9,16 @@
 
 #Handling the ZeroDivisionError Exception
 #When you try to divide by zero, Python raises an exception because it can’t carry out the division.
+
+
+#using try-except blocks
+#write try-except block to handle the exception that was raised.
+#syntax: try:
+#               print(5 / 0)
+#        except ZeroDivisionError:
+#               print("You can't divide by zero!")
+#The code that could potentially cause an error goes in the try block.
+
+#we put the line that cause the error inside try block.
+#python skips over the except block if the code in the try block causes an error.
+#python looks for an except block telling it how to respond to the error.
