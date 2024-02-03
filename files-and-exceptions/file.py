@@ -52,3 +52,10 @@
 #writing a single file
 #once you have  a path defined you can write to a file using the write_text() method,
 #syntax: path.write_text("string")
+
+
+#writing multiple lines
+#write_text()methods does a few things behind the scenes
+#1. it creates a new file in path if the file doesn't exist , it creates that file.
+#to write more than one line to a file, you need to build a string containing the entire contents of the file and the call write_text() with that string.
+# be careful when calling write_text() method  on a path object . if the file already exist write_text() will erase the file before writing to it.
