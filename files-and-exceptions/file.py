@@ -39,3 +39,8 @@
 
 # Large Files: One Million Digits
 # the syntax applies to even file that contains a large amount of data. you will just need to change the path.
+
+
+# is your birthday contained in pi?
+#find out if someones birthday appears anywhere in the first million digits of pi.
+# we will express each birthday as a string and see if the string appears anywhere in pi_string.
