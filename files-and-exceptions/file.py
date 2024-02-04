@@ -59,3 +59,8 @@
 #1. it creates a new file in path if the file doesn't exist , it creates that file.
 #to write more than one line to a file, you need to build a string containing the entire contents of the file and the call write_text() with that string.
 # be careful when calling write_text() method  on a path object . if the file already exist write_text() will erase the file before writing to it.
+
+#the else block
+#we can make the program more error resistant by wrapping the line that might produce errors in a try-except block.
+#the error occurs on the line that performs the division so that where we'll put the try-except block
+#the else block runs if the code in the try block runs successfully.
