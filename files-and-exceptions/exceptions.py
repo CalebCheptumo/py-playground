@@ -46,3 +46,8 @@
 
 #analyzing text
 #you can use the split() method to split a string into a list of elements.
+
+#working with multiple files
+# count_words() function that counts the approximate number of words in a file.
+#count_words() function takes a filename as an argument and tries to count the number of words in the file.
+#
