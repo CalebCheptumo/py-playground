@@ -22,3 +22,10 @@
 #we put the line that cause the error inside try block.
 #python skips over the except block if the code in the try block causes an error.
 #python looks for an except block telling it how to respond to the error.
+
+
+
+#using exceptions to prevent crashes
+#prompt for more valid input instead of crashing.
+#example: division calculator
+
