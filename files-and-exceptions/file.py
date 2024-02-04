@@ -64,3 +64,12 @@
 #we can make the program more error resistant by wrapping the line that might produce errors in a try-except block.
 #the error occurs on the line that performs the division so that where we'll put the try-except block
 #the else block runs if the code in the try block runs successfully.
+
+
+#handing the FileNotFoundError exception
+#the file you are looking for might:
+#1. be in a different location
+#2. have a different name
+#3. not exist at all
+#4. be in a different format
+#you can handle the FileNotFoundError exception using a try-except block.
