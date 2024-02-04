@@ -15,3 +15,10 @@ def count_words(path): #define a function called count_words() that takes a path
 
 path = Path("files-and-exceptions/alice.txt") #create a path object that points to alice.txt
 count_words(path) #call the count_words() function and pass it the path object pointing to alice.txt.
+
+
+
+filenames = ["files-and-exceptions/alice.txt", "files-and-exceptions/siddhartha.txt", "files-and-exceptions/moby_dick.txt"] # Files are stored as simple string
+for filename in filenames: 
+    path = Path(filename)
+    count_words(path)
