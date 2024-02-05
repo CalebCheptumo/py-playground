@@ -51,3 +51,14 @@
 # count_words() function that counts the approximate number of words in a file.
 #count_words() function takes a filename as an argument and tries to count the number of words in the file.
 #
+
+
+#Failing silently
+#you cont need to report every exception you catch.
+#you want the program to fail silently when an exception occurs and continue on as if nothing happened 
+#to make a program fail silently, you write a try block as usual, but you explicitly tell Python to do nothing in the except block.
+#syntax: try:
+#               print(5 / 0)
+#        except ZeroDivisionError:
+#               pass
+#The pass statement tells Python to do nothing in the block.
