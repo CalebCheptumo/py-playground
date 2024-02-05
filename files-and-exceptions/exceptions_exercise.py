@@ -1,3 +1,4 @@
+from pathlib import Path
 #addition - catches ValueError.
 
 
@@ -22,7 +23,6 @@ while True:
 
 
 #addition calculator
-from pathlib import Path
 
 path = Path('files-and-exceptions/guest_book.txt') #using a relative path
 
@@ -46,3 +46,7 @@ while True: #create an infinite loop
         print("The sum of " + str(num1) + " and " + str(num2) + " is " + str(sum) + ".")
 
 print("Thank you for using the calculator!") #thank the user for using the calculator
+
+
+
+#cats and dogs
