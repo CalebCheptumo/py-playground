@@ -63,3 +63,9 @@
 #               pass
 #The pass statement tells Python to do nothing in the block.
 #The pass statement also acts as a placeholder. It tells you that you decided to do nothing at a specific point in your program and that you might want to do something there later.
+
+
+#deciding which errors to report
+#1. if the user enters the wrong filename, you can respond silently or you can prompt the user to enter a different filename.
+#2. if the file is missing, you can respond silently or you can prompt the user to enter a different filename.
+#give user information they need, but dont overwhelm them with details they dont need.
