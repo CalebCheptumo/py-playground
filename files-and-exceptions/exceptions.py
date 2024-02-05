@@ -69,3 +69,12 @@
 #1. if the user enters the wrong filename, you can respond silently or you can prompt the user to enter a different filename.
 #2. if the file is missing, you can respond silently or you can prompt the user to enter a different filename.
 #give user information they need, but dont overwhelm them with details they dont need.
+
+
+
+#storing data
+#programs will ask users to input certain kind of information.
+# a simple way to store user input is storing the data using json module.
+#json module allows you to convert simple python data structure into JSON-formatted string and the load the data from thee file the next time the program runs.
+#can also use jason to share data between different python programs.
+#JSON-  Javascript Object Notation was originally developed by JavaScript, however it has since become a common format used by many languages including python.
