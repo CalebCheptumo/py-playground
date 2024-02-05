@@ -84,3 +84,6 @@
 #json.dumps() function takes one argument: the data you want to convert to JSON format.
 #json.dumps() return a string.
 #syntax: json.dumps(data)
+
+
+#saving and reading user generated data
