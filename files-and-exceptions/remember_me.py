@@ -23,3 +23,25 @@ else:
     contents = json.dumps(username) #use the json.dumps() function to store the username in the file username.json
     path.write_text(contents) #write the contents to the file
     print(f"We'll remember you when you come back, {username}!") #print a message to the user
+
+
+#refactoring
+#move the bulk of logic into one or more functions
+    
+def greet_user():
+    """Greet the user by name."""
+    path = Path('files-and-exceptions/username.json') #create a path object that points to username.json
+    if path.exists():
+        contents = path.read_text()
+        username = json.loads(contents)
+        print(f"Welcome back, {username}!")
+    else:
+        username = input("What is your name? ")
+        contents = json.dumps(username)
+        path.write_text(contents)
+        print(f"We'll remember you when you come back, {username}!")
+
+greet_user() #call the function greet_user() to greet the user by name
+
+
+

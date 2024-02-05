@@ -87,3 +87,7 @@
 
 
 #saving and reading user generated data
+
+
+#Refactoring
+#refactoring is the process of breaking a program into smaller functions that are easier to understand and reuse.
