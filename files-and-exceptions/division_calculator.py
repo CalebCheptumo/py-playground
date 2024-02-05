@@ -7,8 +7,8 @@
 try:
     print(5 / 0)
 except ZeroDivisionError:
-    print("You can't divide by zero!") #this is the message that will be printed when the exception occurs. 
-
+    #print("You can't divide by zero!") #this is the message that will be printed when the exception occurs. 
+    pass #this tells python to do nothing when this exception occurs.
 
 #this program does nothing to handle the error, so the traceback is still displayed.
 print("Give me two numbers, and I'll divide them.") #
