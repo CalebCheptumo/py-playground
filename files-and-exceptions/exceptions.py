@@ -62,3 +62,4 @@
 #        except ZeroDivisionError:
 #               pass
 #The pass statement tells Python to do nothing in the block.
+#The pass statement also acts as a placeholder. It tells you that you decided to do nothing at a specific point in your program and that you might want to do something there later.
