@@ -50,3 +50,7 @@ print("Thank you for using the calculator!") #thank the user for using the calcu
 
 
 #cats and dogs
+
+path = Path('files-and-exceptions/cats.txt') #using a relative path
+contents = path.read_text() #read the contents of the file
+print(contents) #print the contents of the file
