@@ -19,3 +19,30 @@ while True:
         print(answer)
 
 
+
+
+#addition calculator
+from pathlib import Path
+
+path = Path('files-and-exceptions/guest_book.txt') #using a relative path
+
+
+while True: #create an infinite loop
+    try:
+        num1 = input("Please enter the first number (or 'q' to quit): ")
+        if num1.lower() == 'q': #if the user enters 'q', break the loop
+            break
+        num1 = int(num1)
+
+        num2 = input("Please enter the second number (or 'q' to quit): ")
+        if num2.lower() == 'q': #if the user enters 'q', break the loop
+            break
+        num2 = int(num2)
+
+    except ValueError:
+        print("You've entered an invalid number. Please try again.")
+    else:
+        sum = num1 + num2
+        print("The sum of " + str(num1) + " and " + str(num2) + " is " + str(sum) + ".")
+
+print("Thank you for using the calculator!") #thank the user for using the calculator

@@ -15,3 +15,5 @@ while True: #create an infinite loop
     print("Welcome, " + guest_name + "!") #welcome the new guest
 
 print("Thank you for visiting!") #thank the guests for visiting    
+
+
