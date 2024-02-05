@@ -78,3 +78,8 @@
 #json module allows you to convert simple python data structure into JSON-formatted string and the load the data from thee file the next time the program runs.
 #can also use jason to share data between different python programs.
 #JSON-  Javascript Object Notation was originally developed by JavaScript, however it has since become a common format used by many languages including python.
+
+
+#using json.dump() and json.load()
+#json.dumps() function takes one argument: the data you want to convert to JSON format.
+#json.dumps() return a string.
