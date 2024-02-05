@@ -59,3 +59,12 @@ print(contents) #print the contents of the file
 path = Path('files-and-exceptions/dogs.txt') #using a relative path
 contents = path.read_text() #read the contents of the file
 print(contents) #print the contents of the file
+
+
+#cats and dogs file not found
+path = Path('cats.txt') 
+try:
+    contents = path.read_text() #read the contents of the file
+    print(contents) #print the contents of the file
+except FileNotFoundError:
+    print("The file " + str(path) + " was not found.")
