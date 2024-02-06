@@ -1,5 +1,6 @@
 from pathlib import Path
 #addition - catches ValueError.
+import json
 
 
 print("Give me two numbers, and I'll add them.") 
@@ -76,3 +77,15 @@ try:
     print(contents) #print the contents of the file
 except FileNotFoundError:
     pass
+
+
+
+#favorite number
+
+favorite_number = input("What's your favorite number? ") #ask the user for their favorite number
+path = Path('files-and-exceptions/favorite_number.json') #create a path object that points to favorite_number.json
+contents = json.dumps(favorite_number) #convert the favorite number to a string
+path.write_text(contents) #write the favorite number to the file
+print("Thanks! I'll remember that.") #thank the user for their favorite number
+
+
