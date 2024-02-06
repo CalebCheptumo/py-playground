@@ -94,3 +94,19 @@ path = Path('files-and-exceptions/favorite_number.json') #create a path object t
 contents = path.read_text() #read the contents of the file
 favorite_number = json.loads(contents) #convert the string to a number
 print("I know your favorite number! It's " + str(favorite_number) + ".") #print the favorite number
+
+
+
+#favorite number remembered
+path = Path('files-and-exceptions/favorite_number.json') #create a path object that points to favorite_number.json
+
+try:
+    contents = path.read_text() #read the contents of the file
+    favorite_number = json.loads(contents) #convert the string to a number
+    print("I know your favorite number! It's " + str(favorite_number) + ".") #print the favorite number
+
+except FileNotFoundError:
+    favorite_number = input("What's your favorite number? ")
+    contents = json.dumps(favorite_number)
+    path.write_text(contents)
+    print("Thanks! I'll remember that.")
