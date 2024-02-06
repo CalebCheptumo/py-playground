@@ -46,6 +46,10 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - 📚 [Classes](./classes/classes.py)
     - Learning how to define and use classes in Python.
 
+- 📂 Files and Exceptions
+  - 📚 [Files and Exceptions](./files-and-exceptions/file.py)
+    - Learning how to work with files and handle exceptions in Python.
+
 ## 💪 Exercises
 
 - 🏷️ [Name Cases](./variables-data-types/name_cases.py) 
@@ -72,6 +76,8 @@ My Python playground! This is my personal sandbox where I experiment, learn, and
   - Exercise to test understanding of functions in Python.
 - 🏗️ [Classes Exercise](./classes/classes_exercise.py)
   - Exercise to test understanding of classes in Python.
+- 📂 [Files and Exceptions Exercise](./files-and-exceptions/exceptions_exercise.py)
+  - Exercise to test understanding of working with files and handling exceptions in Python.
 
 
 
