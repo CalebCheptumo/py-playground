@@ -44,4 +44,26 @@ def greet_user():
 greet_user() #call the function greet_user() to greet the user by name
 
 
+#refactor greet_user() so its not doing so many different tasks
+def get_stored_username(path): #create a function called get_stored_username() that retrieves a stored username
+    """Get stored username if available."""
+    if path.exists(): #create a path object that points to username.json
+        contents = path.read_text()
+        username = json.loads(contents)
+        return username
+    else:
+        return None #return None if the file username.json does not exist
+    
+def greet_user():
+    """Greet the user by name."""
+    path = Path('files-and-exceptions/username.json')
+    username = get_stored_username(path)
+    if username:
+        print(f"Welcome back, {username}!")
+    else:
+        username = input("What is your name? ")
+        contents = json.dumps(username)
+        path.write_text(contents)
+        print(f"We'll remember you when you come back, {username}!")
 
+greet_user()
