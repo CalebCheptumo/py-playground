@@ -5,3 +5,12 @@
 
 #installing pytest with pip
 #third-party package is a library thats developer outside the core python language.
+
+
+#updating pip
+#pip tool thats is used to install third-party packages.
+#syntax: python -m pip install --upgrade package_name
+#python -m pip install --upgrade pip
+#python -m pip -tells python to run the module pip
+#install --upgrade - tells python to update a package thats already been installed
+#pip - specifies which third-party package to update
