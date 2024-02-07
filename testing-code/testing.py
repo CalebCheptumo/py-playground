@@ -14,3 +14,8 @@
 #python -m pip -tells python to run the module pip
 #install --upgrade - tells python to update a package thats already been installed
 #pip - specifies which third-party package to update
+
+#installing pytest
+#python -m pip install --user pytest
+#we are using the core command (pip install) without the --upgrade flag.
+#--user flag tells python to install this package for current user only. you can as well ignore while installing.
