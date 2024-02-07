@@ -110,3 +110,4 @@ except FileNotFoundError:
     contents = json.dumps(favorite_number)
     path.write_text(contents)
     print("Thanks! I'll remember that.")
+    
