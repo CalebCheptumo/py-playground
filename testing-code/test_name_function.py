@@ -6,3 +6,8 @@ def test_first_last_name(): #define the test function need to start with test fo
     assert formatted_name == 'Caleb Cheptumo' # make assertion about the result of the function call. if the result is what we expect the test will pass. if the result is not what we expect the test will fail.
     #assertion is a claim about a condition.
     
+
+def test_first_last_middle_name():
+    """Do names like Caleb Cheptumo Kibusia work?"""
+    formatted_name = get_formatted_name('caleb', 'cheptumo', 'kibusia') # call the function we want to test and store the result in a variable. which takes three arguments first, middle and last name.
+    assert formatted_name == 'Caleb Kibusia Cheptumo' # make assertion about the result of the function call. if the result is what we expect the test will pass. if the result is not what we expect the test will fail.

@@ -56,3 +56,8 @@
 #when test fail dont change the test, instead change the code that caused the test to fail.
 #modify the function get_formatted_name() so it can handle middle names.
 #make the middle name optional by giving it an empty default value.
+
+
+
+#adding new tests
+#add a new test to the test function to verify that the function can handle middle names.
