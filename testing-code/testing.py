@@ -39,3 +39,9 @@
 #the test function will call the function we're testing and we'll make an assertion about the value thats returned.
 #if the assertion s correct the test will pass, if the assertion fails the test will raise an exception.
 #syntax: assert function_name(arguments) == expected_output
+
+#running a test function
+#to run the test function we'll use the pytest command.
+#navigate to the directory that contains the test function and the function its testing.
+#run the command pytest 
+#pytest will find the test function and run it.
