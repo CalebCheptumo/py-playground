@@ -66,3 +66,11 @@
 
 
 #testing a class
+#variety of assertions
+#commonly used assertions statements in tests
+#1. assert a==b - assert that two values are equal
+#2. assert a!=b - assert that two values are not equal
+#3. assert a  - assert that a evaluates to True
+#4. assert not a - assert that a evaluates to False
+#5. assert element in list - assert that an element is in a list
+#6. assert element not in list - assert that an element is not in a list
