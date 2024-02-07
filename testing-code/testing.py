@@ -49,3 +49,10 @@
 
 #a failing test
 #modify get_formatted_name() so it can handle middle names
+
+
+#responding to a failed test.
+#when a test fails, the output will show you exactly where the problem is.
+#when test fail dont change the test, instead change the code that caused the test to fail.
+#modify the function get_formatted_name() so it can handle middle names.
+#make the middle name optional by giving it an empty default value.
