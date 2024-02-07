@@ -74,3 +74,7 @@
 #4. assert not a - assert that a evaluates to False
 #5. assert element in list - assert that an element is in a list
 #6. assert element not in list - assert that an element is not in a list
+
+
+#a class to test
+#testing a class is similar to testing a function.
