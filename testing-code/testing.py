@@ -32,3 +32,10 @@
 #2. includes tests to prove that a function fails in the ways you expect it to.
 #3. has complete coverage, meaning that it includes a full range of tests for all the code in a function.
 #4. is well-organized so you can understand the set of tests you've written.
+
+
+
+#A passing test
+#the test function will call the function we're testing and we'll make an assertion about the value thats returned.
+#if the assertion s correct the test will pass, if the assertion fails the test will raise an exception.
+#syntax: assert function_name(arguments) == expected_output
