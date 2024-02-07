@@ -2,6 +2,10 @@
 
 My Python playground! This is my personal sandbox where I experiment, learn, and have fun with Python. 🚀
 
+## 🐍 Python Version
+
+ Python 3.11.6
+
 ## 📚 Topics
 
 - 🌍 [Hello World](./py-getting-started/hello_world.py) 
