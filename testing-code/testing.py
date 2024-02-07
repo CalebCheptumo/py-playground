@@ -45,3 +45,7 @@
 #navigate to the directory that contains the test function and the function its testing.
 #run the command pytest 
 #pytest will find the test function and run it.
+
+
+#a failing test
+#modify get_formatted_name() so it can handle middle names
