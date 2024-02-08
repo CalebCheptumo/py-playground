@@ -15,3 +15,11 @@
 #installing Django
 # command pip install --upgrade pip - to upgrade pip its advisable to upgrade pip whenever you make a new environment
 # command pip install django - to install django
+
+
+#Creating a new project
+# command django-admin startproject (name of the project)  . - the dot at the end of the command tells Django to create the new project with a directory structure that will make it easy to deploy the project to a web server when the time comes.
+#startproject - a command that tells Django to set up a new project with the name you specify.
+#manage.py file - short program that takes in commands and feeds them to the relevant parts of Django. eg working with database and running servers.
+#settings.py file - controls how django interact with your system and manages your project.
+#urls.py file - helps django server the files it creates the filename is an acronym for "web server gateway interface"
