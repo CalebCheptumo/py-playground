@@ -10,3 +10,8 @@
 #activate the virtual environment
 # Command source name_of_virtual_environment/bin/activate - this command runs the script activate in the bin directory of the virtual environment.
 # to stop the virtual environment, use the command deactivate
+
+
+#installing Django
+# command pip install --upgrade pip - to upgrade pip its advisable to upgrade pip whenever you make a new environment
+# command pip install django - to install django
