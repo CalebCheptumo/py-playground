@@ -34,3 +34,9 @@
 #viewing the project
 #python manage.py runserver - starts the server(development server) and tells Django to listen for requests on port 8000 on your computer. http://127.0.0.1:8000/ - the address of the server
 #you can also specify the port you want to use by adding the port number at the end of the command. eg python manage.py runserver 8001
+
+#starting an app
+#a django project is organized as group of individual apps that work together to make the project work as a whole.
+#command python manage.py startapp (name of the app)
+#the command startapp app name tells django to create the infrastructure needed to build an app.
+#models.py file- used to define the data we want to manage in our app .
