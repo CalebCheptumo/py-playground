@@ -58,3 +58,6 @@
 #tell django to include our app in the overall project by add the app in the settings.py file in the INSTALLED_APPS section.
 
 #python manage.py makemigrations app_name - tells django to modify the database so it can store information related to the model Topic
+#makemigrations - tells django to figure out how to modify the database so it can store the data related to the model we've defined.
+#0001_initial.py - the file that django created to store the changes it needs to make to the database.
+#apply the changes to the database by running the command python manage.py migrate
