@@ -46,3 +46,8 @@
 #1. each user will need to create a number of topics in their learning log.
 #2. Each entry they make will be tied to a topic and these entries will be displayed as text.
 #3. store the timestamps of each entry, so we can see when each entry was made.
+
+#a module called models is being imported from django.db
+#model tells django how to work with the data that will be stored in the app.
+#model is a class , it has attributes and methods .
+
