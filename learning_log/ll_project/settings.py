@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+ 
+     #my apps - grouping apps in project helps keep track of theme as the project grows, and it should come before default apps
     'learning_logs', # tells django to include the app in the overall project.
 ]
 
