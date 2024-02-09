@@ -50,4 +50,6 @@
 #a module called models is being imported from django.db
 #model tells django how to work with the data that will be stored in the app.
 #model is a class , it has attributes and methods .
+#syntax class name_of_model(models.Model):  
 
+#ref https://docs.djangoproject.com/en/5.0/ref/models/fields/
