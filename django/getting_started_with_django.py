@@ -40,3 +40,9 @@
 #command python manage.py startapp (name of the app)
 #the command startapp app name tells django to create the infrastructure needed to build an app.
 #models.py file- used to define the data we want to manage in our app .
+
+#defining models
+#regarding our learning log app.
+#1. each user will need to create a number of topics in their learning log.
+#2. Each entry they make will be tied to a topic and these entries will be displayed as text.
+#3. store the timestamps of each entry, so we can see when each entry was made.
