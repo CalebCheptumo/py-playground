@@ -66,3 +66,8 @@
 #1. modify the models.py file
 #2. run the command python manage.py makemigrations app_name
 #3. run the command python manage.py migrate
+
+
+#django admin site
+#django makes it easy to work with models through the admin site.
+#its is only meant to be used by sites administrators. not meant for regular users.
