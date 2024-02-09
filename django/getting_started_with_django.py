@@ -23,3 +23,9 @@
 #manage.py file - short program that takes in commands and feeds them to the relevant parts of Django. eg working with database and running servers.
 #settings.py file - controls how django interact with your system and manages your project.
 #urls.py file - helps django server the files it creates the filename is an acronym for "web server gateway interface"
+
+
+#Creating the database
+#python manage.py migrate - tells Django to make sure the database matches the current state of the project.
+#migrating the database - modifying the database
+#SQLite iss a database that runs off a single file, ideal for writing simple apps because you wont have to pay much attention managing the database.
