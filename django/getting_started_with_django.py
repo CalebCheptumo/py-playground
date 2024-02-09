@@ -80,4 +80,4 @@
 
 #registering a model with the admin site
 #django includes some models in the admin site automatically  such as User and Group. bt models we create needs to be added manually.
-
+#syntax admin.site.register(ModelName) - tells django to manage our model through the admin site.
