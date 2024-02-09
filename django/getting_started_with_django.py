@@ -61,3 +61,8 @@
 #makemigrations - tells django to figure out how to modify the database so it can store the data related to the model we've defined.
 #0001_initial.py - the file that django created to store the changes it needs to make to the database.
 #apply the changes to the database by running the command python manage.py migrate
+
+#whenever we want to modify the data thats being stored in database or project manages.
+#1. modify the models.py file
+#2. run the command python manage.py makemigrations app_name
+#3. run the command python manage.py migrate
