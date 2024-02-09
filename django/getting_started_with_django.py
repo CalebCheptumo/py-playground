@@ -29,3 +29,8 @@
 #python manage.py migrate - tells Django to make sure the database matches the current state of the project.
 #migrating the database - modifying the database
 #SQLite iss a database that runs off a single file, ideal for writing simple apps because you wont have to pay much attention managing the database.
+
+
+#viewing the project
+#python manage.py runserver - starts the server(development server) and tells Django to listen for requests on port 8000 on your computer. http://127.0.0.1:8000/ - the address of the server
+#you can also specify the port you want to use by adding the port number at the end of the command. eg python manage.py runserver 8001
