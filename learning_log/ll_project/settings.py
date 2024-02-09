@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'learning_logs', # tells django to include the app in the overall project.
 ]
 
 MIDDLEWARE = [

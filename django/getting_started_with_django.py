@@ -52,4 +52,7 @@
 #model is a class , it has attributes and methods .
 #syntax class name_of_model(models.Model):  
 
-#ref https://docs.djangoproject.com/en/5.0/ref/models/fields/
+#ref https://docs.djangoproject.com/en/5.0/ref/models/fields/]
+
+#activating models
+#tell django to include our app in the overall project by add the app in the settings.py file in the INSTALLED_APPS section.
