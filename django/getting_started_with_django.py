@@ -56,3 +56,5 @@
 
 #activating models
 #tell django to include our app in the overall project by add the app in the settings.py file in the INSTALLED_APPS section.
+
+#python manage.py makemigrations app_name - tells django to modify the database so it can store information related to the model Topic
