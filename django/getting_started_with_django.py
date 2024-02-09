@@ -71,3 +71,8 @@
 #django admin site
 #django makes it easy to work with models through the admin site.
 #its is only meant to be used by sites administrators. not meant for regular users.
+
+#setting up a superuser
+#superuser - a user who has all the privileges available on the site.
+#command python manage.py createsuperuser - tells django to create a superuser for the project.
+#django hashes the password for security reasons.
