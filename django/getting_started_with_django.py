@@ -76,3 +76,8 @@
 #superuser - a user who has all the privileges available on the site.
 #command python manage.py createsuperuser - tells django to create a superuser for the project.
 #django hashes the password for security reasons.
+
+
+#registering a model with the admin site
+#django includes some models in the admin site automatically  such as User and Group. bt models we create needs to be added manually.
+
