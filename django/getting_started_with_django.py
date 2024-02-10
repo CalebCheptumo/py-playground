@@ -112,3 +112,7 @@
 
 #URL pattern describe the way the URL is laid out. it tells django what to look for when matching a browser request with a site URL so it knows which page to return
 #each URL then maps to a particular view. the view function retrieves and processes the data needed for that page. the view function often renders the page using templates , which contains the overall structure of the the page
+
+
+#writing a view
+#a view function takes in information from a request, prepares the data needed to generate a page and then sends the data back to the browser. it does this by using a template that defines what the page will look like.
