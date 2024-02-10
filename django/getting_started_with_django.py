@@ -89,3 +89,16 @@
 #defining the entry model
 #define a model for a user to record what they have been learning about chess and rock climbing.
 #many-to-one relationship - a relationship where many items are tied to one item.
+
+
+#django shell - interactive environment that lets you work with your project's database.
+#command python manage.py shell - starts the django shell.
+#importing the model we want to work with. from app_name.models import ModelName
+# use methods to work with the data in the database. eg ModelName.objects.all() - returns all the instances of the model. the list that is returned is a queryset.
+#queryset - a list of objects from the database.
+# we can loop through the queryset to see the individual items in the list. using ID to access the individual items in the list.
+#assign queryset to a variable and use the variable to access the individual items in the list.
+#use the variable to access the individual items in the list.
+#variable_name = ModelName.objects.all()
+#for variable in variable_name:
+#    print(variable_name.id, variable)
