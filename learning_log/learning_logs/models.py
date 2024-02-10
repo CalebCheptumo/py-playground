@@ -9,3 +9,16 @@ class Topic(models.Model): # a model is a class .created a class called Topic th
         """Return a string representation of the model."""
         return self.text # returns the value of the text attribute when we call __str__() method.
 
+
+class Entry(models.Model):  # the Entry class/model inherits from django base model class
+    """Something specific learned about a topic """
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE) # is a ForeignKey instance. foreign key is a database term it  reference to another record in the database, it connects each entry to a specific topic. on_delete=models.CASCADE tells django that when a topic is deleted, all the entries associated with that topic should be deleted as well. its known as cascading delete.
+    text = models.TextField() # text is an attribute that will hold the text of the entry. textfield is for long pieces of text, such as a body of an entry or a comment.
+    date_added = models.DateTimeField(auto_now_add=True) # date_added is an attribute that will hold the date and time the entry was created. we pass the argument auto_now_add=True to tell django to automatically set this attribute to the current date and time whenever the user creates a new entry.
+
+    class Meta: # nested class inside Entry class to hold extra information for managing a model. it lets us set a special attribute telling django to use Entries when it needs to refer to more than one entry. without this django would refer to multiple entries as Entrys.
+        verbose_name_plural = 'entries'
+
+    def __str__(self): # tells django how to represent the model in text format.
+        """Return a simple string representing the entry"""
+        return f"{self.text[:50]}..." # returns the first 50 characters of the text attribute, followed by an ellipsis, unless the entry is less than 50 characters long.
