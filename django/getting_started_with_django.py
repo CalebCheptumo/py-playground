@@ -116,3 +116,7 @@
 
 #writing a view
 #a view function takes in information from a request, prepares the data needed to generate a page and then sends the data back to the browser. it does this by using a template that defines what the page will look like.
+
+#writing a template
+#templates define what the page should look like and django fills in the relevant data each time the page is requested.
+# a template allows you to access any data provided by the views.
