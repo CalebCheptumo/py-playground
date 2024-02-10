@@ -104,3 +104,11 @@
 #    print(variable_name.id, variable)
 
 
+#making pages: the learning logs home page
+#making web pages in django consist of three stages:
+#1. defining the URL
+#2. writing a view
+#3. writing a template
+
+#URL pattern describe the way the URL is laid out. it tells django what to look for when matching a browser request with a site URL so it knows which page to return
+#each URL then maps to a particular view. the view function retrieves and processes the data needed for that page. the view function often renders the page using templates , which contains the overall structure of the the page
