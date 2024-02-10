@@ -84,3 +84,8 @@
 
 #defining the entry model
 #many-to-one relationship - a relationship where many items are tied to one item.
+
+
+#defining the entry model
+#define a model for a user to record what they have been learning about chess and rock climbing.
+#many-to-one relationship - a relationship where many items are tied to one item.
