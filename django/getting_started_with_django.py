@@ -102,3 +102,5 @@
 #variable_name = ModelName.objects.all()
 #for variable in variable_name:
 #    print(variable_name.id, variable)
+
+
