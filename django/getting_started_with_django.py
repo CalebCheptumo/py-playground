@@ -120,3 +120,11 @@
 #writing a template
 #templates define what the page should look like and django fills in the relevant data each time the page is requested.
 # a template allows you to access any data provided by the views.
+
+
+#building additional pages
+#each page in a django project is built using the same three steps:
+#1. defining the URL
+#2. writing a view
+#3. writing a template
+#base.html - a template that contains the overall structure of the page. it contains the parts of the page that will be the same on every page of the site. 
