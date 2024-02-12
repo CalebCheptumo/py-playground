@@ -138,3 +138,5 @@
 
 #the parent template.
 #base.html - will contain elements common to all pages of the site.
+#{% block content %}{% endblock content %}- pair of block tags . this block named content is a placeholder ; the child template will define the kind of info that goes in the content block.
+ 
