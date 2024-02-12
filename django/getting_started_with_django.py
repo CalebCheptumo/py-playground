@@ -135,3 +135,6 @@
 #when building website some elements will need to be repeated on each page , rather than writing these elements directly into each page.
 #write a base template containing the repeated elements and then have each page inherit from the bae.
 #this approach lets you focus on developing the unique parts of each page, while the repeated elements are inherited from the base template.
+
+#the parent template.
+#base.html - will contain elements common to all pages of the site.
