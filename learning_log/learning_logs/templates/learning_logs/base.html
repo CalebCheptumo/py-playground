@@ -1,0 +1,12 @@
+<p>
+    <a href="{% url 'learning_logs:index %}">Learning Log</a>
+</p>
+
+{% block content %}{% endblock content %} 
+
+<!--to generate a link we use template tag- which is indicated by braces and percentage sign ({% %})
+a template tag generate information to be displayed on a page.
+the template tag {% url 'learning_logs:index' %} generates the URL matching the URL pattern defined in learning_logs.urls.py with the name index
+learning_logs is a namespace and index is a uniquely named URL pattern in that namespace.
+the namespace comes from  the value we assigned to app_name in learning_logs/urls.py
+-->
