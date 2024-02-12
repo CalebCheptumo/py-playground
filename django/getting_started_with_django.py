@@ -128,3 +128,10 @@
 #2. writing a view
 #3. writing a template
 #base.html - a template that contains the overall structure of the page. it contains the parts of the page that will be the same on every page of the site. 
+
+
+
+#template inheritance
+#when building website some elements will need to be repeated on each page , rather than writing these elements directly into each page.
+#write a base template containing the repeated elements and then have each page inherit from the bae.
+#this approach lets you focus on developing the unique parts of each page, while the repeated elements are inherited from the base template.
