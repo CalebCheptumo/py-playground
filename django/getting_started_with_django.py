@@ -140,3 +140,10 @@
 #base.html - will contain elements common to all pages of the site.
 #{% block content %}{% endblock content %}- pair of block tags . this block named content is a placeholder ; the child template will define the kind of info that goes in the content block.
  
+#child template
+#refactor the home page to use the base template.
+#{% extends "learning_logs/base.html" %} - tells django to inherit from the base template.
+#{% extends %} tags tells django which parent template to inherit from.
+#{% block content %} - defines the content block that will be filled in by the child template.
+#{% endblock content %} - ends the content block.
+#{% endblock %} tag doesnt require a name but if a template grows to contain multiple blocks it can be helpful to name the blocks.
