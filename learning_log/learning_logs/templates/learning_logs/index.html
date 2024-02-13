@@ -1,3 +1,4 @@
+{% extends 'learning_logs/base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,9 @@
     <title>Learning Log</title>
 </head>
 <body>
+    {% block content %}
     <h1>Learning Log</h1>
     <p>Learning Log helps you keep track of your learning, for any topic you're learning about.</p>
+    {% endblock content %}
 </body>
 </html>

@@ -147,3 +147,5 @@
 #{% block content %} - defines the content block that will be filled in by the child template.
 #{% endblock content %} - ends the content block.
 #{% endblock %} tag doesnt require a name but if a template grows to contain multiple blocks it can be helpful to name the blocks.
+
+
